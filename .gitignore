@@ -24,3 +24,17 @@ proguard/
 
 # Log Files
 *.log
+
+## Cocos2D-x files
+
+# Project Folders
+proj.*/
+
+# Stuff
+cmake_install.cmake
+cocos2d/
+compile_commands.json
+lib/
+linux-build/
+nbproject/
+.cocos-project.json
