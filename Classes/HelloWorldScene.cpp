@@ -31,7 +31,7 @@ bool HelloWorld::init()
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     
     // Using an empty node to maintain all of the game sprites
-    auto spriteNode = Sprite::create();
+    auto spriteNode = Node::create();
     
     // Loading SquareBro from the SpriteSheet
     auto daSquareBro = Sprite::createWithSpriteFrameName("daSquareBro.png");
@@ -42,6 +42,7 @@ bool HelloWorld::init()
     
     // Adding spriteNode
     this->addChild(spriteNode,-1);
+    
     // Adding Squares to the spriteNode
     spriteNode->addChild(daSquareBro,0);
     spriteNode->addChild(daSquareSis,0);
