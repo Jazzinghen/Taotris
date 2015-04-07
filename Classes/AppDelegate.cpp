@@ -37,6 +37,10 @@ bool AppDelegate::applicationDidFinishLaunching() {
     // set FPS. the default value is 1.0/60 if you don't call this
     director->setAnimationInterval(1.0 / 60);
 
+    // loads the spritesheet into the manager
+    auto squareCache = SpriteFrameCache::getInstance();
+    squareCache->addSpriteFramesWithFile("res/Sprites/HDR/Squares.plist");
+    
     // create a scene. it's an autorelease object
     auto scene = HelloWorld::createScene();
 
