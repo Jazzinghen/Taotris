@@ -30,10 +30,17 @@ bool HelloWorld::init()
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     
+    // Loading SquareBro from the SpriteSheet
     auto daSquareBro = Sprite::createWithSpriteFrameName("daSquareBro.png");
     daSquareBro->setPosition(100, 200);
     
+    auto daSquareSis = Sprite::createWithSpriteFrameName("daSquareSis.png");
+    daSquareSis->setPosition(100,200);
+    
+    // Adding SquareBro as a node under the scene
     this->addChild(daSquareBro,0);
+    // daSquareSis is an SquareImouto, actually, so it's under SquareBro
+    daSquareBro->addChild(daSquareSis,0);
     
     return true;
 }
