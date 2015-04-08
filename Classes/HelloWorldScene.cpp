@@ -1,4 +1,5 @@
 #include "Include/HelloWorldScene.h"
+#include "Include/GridManager.h"
 
 USING_NS_CC;
 
@@ -30,6 +31,8 @@ bool HelloWorld::init()
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     
+    auto grids = new GridManager();
+    
     // Using an empty node to maintain all of the game sprites
     auto spriteNode = Node::create();
     
@@ -43,6 +46,7 @@ bool HelloWorld::init()
     
     // Adding spriteNode
     this->addChild(spriteNode,-1);
+    this->addChild(grids);
     
     // Adding Squares to the spriteNode
     spriteNode->addChild(daSquareBro,0);
