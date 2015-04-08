@@ -1,4 +1,4 @@
-#include "HelloWorldScene.h"
+#include "Include/HelloWorldScene.h"
 
 USING_NS_CC;
 
@@ -39,6 +39,7 @@ bool HelloWorld::init()
     
     auto daSquareSis = Sprite::createWithSpriteFrameName("daSquareSis.png");
     daSquareSis->setPosition(400, 200);
+    daSquareSis->setScale(0.5,0.5);
     
     // Adding spriteNode
     this->addChild(spriteNode,-1);
