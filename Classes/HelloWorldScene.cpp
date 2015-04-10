@@ -36,6 +36,10 @@ bool HelloWorld::init()
     // Using an empty node to maintain all of the game sprites
     auto spriteNode = Node::create();
     
+    auto background = Sprite::createWithSpriteFrameName("background.png");
+    background->setAnchorPoint(Vec2(0, 0));
+    background->setPosition(0, 0);
+    
     // Loading SquareBro from the SpriteSheet
     auto daSquareBro = Sprite::createWithSpriteFrameName("daSquareBro.png");
     daSquareBro->setPosition(100, 200);
@@ -47,6 +51,7 @@ bool HelloWorld::init()
     // Adding spriteNode
     this->addChild(spriteNode,-1);
     this->addChild(grids);
+    this->addChild(background, -1);
     
     // Adding Squares to the spriteNode
     spriteNode->addChild(daSquareBro,0);

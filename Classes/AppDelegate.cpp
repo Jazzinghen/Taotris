@@ -1,3 +1,5 @@
+#include <iostream>
+
 #include "Include/AppDelegate.h"
 #include "Include/HelloWorldScene.h"
 
@@ -44,6 +46,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
          * 
          *   Put it AFTER the initialisation of the OpenGL view. I'm dumb.
          */
+        glview->setFrameSize(1280, 720);
         glview->setDesignResolutionSize(1920, 1080, ResolutionPolicy::SHOW_ALL);
     }
     
@@ -54,7 +57,9 @@ bool AppDelegate::applicationDidFinishLaunching() {
     director->setAnimationInterval(1.0 / 60);
 
         
-    auto screenSize = director->getWinSize();
+    auto screenSize = director->getOpenGLView()->getFrameSize();
+    
+    std::cout << "getVisibleSize " << screenSize.height;
     
     // loads the spritesheet into the manager
     auto squareCache = SpriteFrameCache::getInstance();
@@ -66,7 +71,6 @@ bool AppDelegate::applicationDidFinishLaunching() {
     } else {
         squareCache->addSpriteFramesWithFile("res/SpriteSheets/SD/TaotrisRes.plist");
     }
-
     
     
     // create a scene. it's an autorelease object
