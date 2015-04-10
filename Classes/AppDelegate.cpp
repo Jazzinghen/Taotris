@@ -3,6 +3,18 @@
 
 USING_NS_CC;
 
+//
+//typedef struct tagResource
+//{
+//    cocos2d::CCSize size;
+//    String directory;
+//}Resource;
+//
+//static Resource SDResource   =  { cocos2d::CCSizeMake(480, 270),   "SD" };
+//static Resource HDResource   =  { cocos2d::CCSizeMake(960, 540),   "HD" };
+//static Resource HDRResource  =  { cocos2d::CCSizeMake(1920, 1080), "HDR" };
+//static cocos2d::CCSize designResolutionSize = cocos2d::CCSizeMake(1920, 1080);
+
 AppDelegate::AppDelegate() {
 
 }
@@ -23,14 +35,32 @@ void AppDelegate::initGLContextAttrs()
 }
 
 bool AppDelegate::applicationDidFinishLaunching() {
+    
     // initialize director
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
     if(!glview) {
         glview = GLViewImpl::create("Taotris");
+        //glview->setDesignResolutionSize(1920, 1080, (ResolutionPolicy) 3 );
         director->setOpenGLView(glview);
+        /* * This function is needed in order to create a design space.
+         *   The main idea of having a Design Space is to draw everything using
+         *   a single resolution (E.g. using always the same coordinates, and then
+         *   transform these coordinates in the screen space.
+         * 
+         *   In this way you do a double passage: first you scale graphical
+         *   resources to the design space, then you scale from design space
+         *   to screen space. Obviously sprites are not converted two times, it's
+         *   just a computation. But in this way you don't have to do computations
+         *   for scaling resources or game elements.
+         * 
+         *   Put it AFTER the initialisation of the OpenGL view. I'm dumb.
+         */
+        glview->setDesignResolutionSize(1920, 1080, ResolutionPolicy::SHOW_ALL);
     }
-
+    
+    
+    
     // turn on display FPS
     director->setDisplayStats(true);
 
@@ -39,7 +69,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     // loads the spritesheet into the manager
     auto squareCache = SpriteFrameCache::getInstance();
-    squareCache->addSpriteFramesWithFile("res/SpriteSheets/HDR/Squares.plist");
+    squareCache->addSpriteFramesWithFile("res/SpriteSheets/HDR/TaotrisRes.plist");
     
     // create a scene. it's an autorelease object
     auto scene = HelloWorld::createScene();

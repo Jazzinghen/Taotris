@@ -10,7 +10,7 @@
 USING_NS_CC;
 
 GridManager::GridManager() {
-    auto daSquareBro = Sprite::createWithSpriteFrameName("daSquareBro.png");
+    auto daSquareBro = Sprite::createWithSpriteFrameName("daSquareBroBig.png");
     daSquareBro->setPosition(350, 400);
     
     this->addChild(daSquareBro);
