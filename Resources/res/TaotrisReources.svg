@@ -29,9 +29,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.50000003"
-     inkscape:cx="1386.4778"
-     inkscape:cy="412.71411"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="1608.5951"
+     inkscape:cy="635.97334"
      inkscape:document-units="px"
      inkscape:current-layer="layer4"
      showgrid="false"
@@ -105,7 +105,7 @@
      id="layer4"
      inkscape:label="Blocks">
     <g
-       id="g4353"
+       id="g4545"
        inkscape:export-filename="/home/jazzinghen/Projects/CocosProjects/TestGame01/Resources/res/Sprites/daSquareBro.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
@@ -126,18 +126,18 @@
          height="85"
          width="85"
          id="rect6511"
-         style="opacity:0.75;fill:#4d4d4d;fill-opacity:0.99215686;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
+         style="opacity:0.75;fill:#272822;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
     </g>
     <g
-       id="use6470"
-       inkscape:tile-x0="127.43987"
-       inkscape:tile-y0="152.3259"
-       transform="translate(1636.5601,541.47864)">
+       id="g4537"
+       inkscape:export-filename="/home/jazzinghen/Projects/CocosProjects/TestGame01/Resources/res/Sprites/daSquareMidori.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          inkscape:connector-curvature="0"
          id="path7469"
-         d="m 127.43987,124.68806 0,90 90,0 0,-90 -90,0 z m 2.5,2.5 85,0 0,85 -85,0 0,-85 z"
-         style="opacity:0.75;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
+         d="m 1764,666.1667 0,90 90,0 0,-90 -90,0 z m 2.5,2.5 85,0 0,85 -85,0 0,-85 z"
+         style="opacity:0.75;fill:#b5ff00;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
       <rect
          inkscape:tile-y0="90.378934"
          inkscape:tile-x0="154.47771"
@@ -145,22 +145,20 @@
          inkscape:tile-w="95"
          inkscape:tile-cy="137.87893"
          inkscape:tile-cx="201.97771"
-         y="127.18806"
-         x="129.93987"
+         y="668.66669"
+         x="1766.5"
          height="85"
          width="85"
          id="rect7471"
-         style="opacity:0.5;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
+         style="opacity:0.75;fill:#272822;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
     </g>
     <g
-       id="use6472"
-       inkscape:tile-x0="127.43987"
-       inkscape:tile-y0="152.3259"
-       transform="translate(1522.5601,426.31196)">
+       id="g4355"
+       transform="translate(-0.654425,0)">
       <path
          inkscape:connector-curvature="0"
          id="path7475"
-         d="m 127.43987,124.68806 0,90 90,0 0,-90 -90,0 z m 2.5,2.5 85,0 0,85 -85,0 0,-85 z"
+         d="m 1650,551.00002 0,90 90,0 0,-90 -90,0 z m 2.5,2.5 85,0 0,85 -85,0 0,-85 z"
          style="opacity:0.75;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
       <rect
          inkscape:tile-y0="90.378934"
@@ -169,22 +167,22 @@
          inkscape:tile-w="95"
          inkscape:tile-cy="137.87893"
          inkscape:tile-cx="201.97771"
-         y="127.18806"
-         x="129.93987"
+         y="553.5"
+         x="1652.5"
          height="85"
          width="85"
          id="rect7477"
          style="opacity:0.5;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
     </g>
     <g
-       id="g4357"
+       id="g4549"
        inkscape:export-filename="/home/jazzinghen/Projects/CocosProjects/TestGame01/Resources/res/Sprites/daSquareSis.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <path
          inkscape:connector-curvature="0"
          id="path7481"
-         d="m 1650,666.66671 0,90 90,0 0,-90 -90,0 z m 2.5,2.5 85,0 0,85 -85,0 0,-85 z"
+         d="m 1649.3456,666.66671 0,90 90,0 0,-90 -90,0 z m 2.5,2.5 85,0 0,85 -85,0 0,-85 z"
          style="opacity:0.75;fill:#7f2aff;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
       <rect
          inkscape:tile-y0="90.378934"
@@ -194,22 +192,23 @@
          inkscape:tile-cy="137.87893"
          inkscape:tile-cx="201.97771"
          y="669.16669"
-         x="1652.5"
+         x="1651.8456"
          height="85"
          width="85"
          id="rect7483"
-         style="opacity:0.75;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
+         style="opacity:0.75;fill:#272822;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
     </g>
     <g
-       id="use6476"
-       inkscape:tile-x0="127.43987"
-       inkscape:tile-y0="152.3259"
-       transform="translate(1522.5601,657.64527)">
+       id="g4513"
+       transform="translate(-0.654425,0)"
+       inkscape:export-filename="/home/jazzinghen/Projects/CocosProjects/TestGame01/Resources/res/Sprites/daSquarePlum.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          inkscape:connector-curvature="0"
          id="path7487"
-         d="m 127.43987,124.68806 0,90 90,0 0,-90 -90,0 z m 2.5,2.5 85,0 0,85 -85,0 0,-85 z"
-         style="opacity:0.75;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
+         d="m 1650,782.33333 0,90 90,0 0,-90 -90,0 z m 2.5,2.5 85,0 0,85 -85,0 0,-85 z"
+         style="opacity:0.75;fill:#ff00cc;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
       <rect
          inkscape:tile-y0="90.378934"
          inkscape:tile-x0="154.47771"
@@ -217,23 +216,24 @@
          inkscape:tile-w="95"
          inkscape:tile-cy="137.87893"
          inkscape:tile-cx="201.97771"
-         y="127.18806"
-         x="129.93987"
+         y="784.83331"
+         x="1652.5"
          height="85"
          width="85"
          id="rect7489"
-         style="opacity:0.5;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
+         style="opacity:0.75;fill:#272822;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
     </g>
     <g
-       id="use6478"
-       inkscape:tile-x0="127.43987"
-       inkscape:tile-y0="152.3259"
-       transform="translate(1522.5601,773.31196)">
+       id="g4509"
+       transform="translate(-0.654425,0)"
+       inkscape:export-filename="/home/jazzinghen/Projects/CocosProjects/TestGame01/Resources/res/Sprites/daSquareAka.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          inkscape:connector-curvature="0"
          id="path7493"
-         d="m 127.43987,124.68806 0,90 90,0 0,-90 -90,0 z m 2.5,2.5 85,0 0,85 -85,0 0,-85 z"
-         style="opacity:0.75;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
+         d="m 1650,898.00002 0,90 90,0 0,-90 -90,0 z m 2.5,2.5 85,0 0,85 -85,0 0,-85 z"
+         style="opacity:0.75;fill:#ff2a2a;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
       <rect
          inkscape:tile-y0="90.378934"
          inkscape:tile-x0="154.47771"
@@ -241,23 +241,23 @@
          inkscape:tile-w="95"
          inkscape:tile-cy="137.87893"
          inkscape:tile-cx="201.97771"
-         y="127.18806"
-         x="129.93987"
+         y="900.5"
+         x="1652.5"
          height="85"
          width="85"
          id="rect7495"
-         style="opacity:0.5;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
+         style="opacity:0.75;fill:#272822;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
     </g>
     <g
-       id="use6476-1"
-       inkscape:tile-x0="127.43987"
-       inkscape:tile-y0="152.3259"
-       transform="translate(1636.5601,657.64529)">
+       id="g4533"
+       inkscape:export-filename="/home/jazzinghen/Projects/CocosProjects/TestGame01/Resources/res/Sprites/daSquareMiku.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          inkscape:connector-curvature="0"
          id="path7499"
-         d="m 127.43987,124.68806 0,90 90,0 0,-90 -90,0 z m 2.5,2.5 85,0 0,85 -85,0 0,-85 z"
-         style="opacity:0.75;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
+         d="m 1764,782.33335 0,90 90,0 0,-90 -90,0 z m 2.5,2.5 85,0 0,85 -85,0 0,-85 z"
+         style="opacity:0.75;fill:#00ccd1;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
       <rect
          inkscape:tile-y0="90.378934"
          inkscape:tile-x0="154.47771"
@@ -265,23 +265,23 @@
          inkscape:tile-w="95"
          inkscape:tile-cy="137.87893"
          inkscape:tile-cx="201.97771"
-         y="127.18806"
-         x="129.93987"
+         y="784.83337"
+         x="1766.5"
          height="85"
          width="85"
          id="rect7501"
-         style="opacity:0.5;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
+         style="opacity:0.75;fill:#272822;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
     </g>
     <g
-       id="use6478-3"
-       inkscape:tile-x0="127.43987"
-       inkscape:tile-y0="152.3259"
-       transform="translate(1636.5601,773.81195)">
+       id="g4529"
+       inkscape:export-filename="/home/jazzinghen/Projects/CocosProjects/TestGame01/Resources/res/Sprites/daSquareShiro.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          inkscape:connector-curvature="0"
          id="path7505"
-         d="m 127.43987,124.68806 0,90 90,0 0,-90 -90,0 z m 2.5,2.5 85,0 0,85 -85,0 0,-85 z"
-         style="opacity:0.75;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
+         d="m 1764,898.50001 0,90 90,0 0,-90 -90,0 z m 2.5,2.5 85,0 0,85 -85,0 0,-85 z"
+         style="opacity:0.75;fill:#f8f8f2;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
       <rect
          inkscape:tile-y0="90.378934"
          inkscape:tile-x0="154.47771"
@@ -289,12 +289,148 @@
          inkscape:tile-w="95"
          inkscape:tile-cy="137.87893"
          inkscape:tile-cx="201.97771"
-         y="127.18806"
-         x="129.93987"
+         y="901"
+         x="1766.5"
          height="85"
          width="85"
          id="rect7507"
-         style="opacity:0.5;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
+         style="opacity:0.75;fill:#272822;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
+    </g>
+    <g
+       id="g4414"
+       transform="translate(59.5001,-361.55337)"
+       inkscape:export-filename="/home/jazzinghen/Projects/CocosProjects/TestGame01/Resources/res/Sprites/daSquareBroBig.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:connector-curvature="0"
+         id="rect4407"
+         d="m 1704.4999,452.00002 0,90 90,0 0,-90 -90,0 z m 5,5 80,0 0,80 -80,0 0,-80 z"
+         style="opacity:0.75;fill:#ff6600;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
+      <rect
+         y="457"
+         x="1709.5"
+         height="80"
+         width="80"
+         id="rect4411"
+         style="opacity:0.75;fill:#272822;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
+    </g>
+    <g
+       id="g4466"
+       transform="translate(-2.5e-5,0)"
+       inkscape:export-filename="/home/jazzinghen/Projects/CocosProjects/TestGame01/Resources/res/Sprites/daSquareSisBig.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         style="opacity:0.75;fill:#7f2aff;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373"
+         d="m 1649.3456,197.44159 0,90 90,0 0,-90 -90,0 z m 5,5 80,0 0,80 -80,0 0,-80 z"
+         id="path4420"
+         inkscape:connector-curvature="0" />
+      <rect
+         style="opacity:0.75;fill:#272822;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373"
+         id="rect4422"
+         width="80"
+         height="80"
+         x="1654.3457"
+         y="202.44157" />
+    </g>
+    <g
+       id="g4497"
+       transform="translate(-2.5e-5,6.3639526)"
+       inkscape:export-filename="/home/jazzinghen/Projects/CocosProjects/TestGame01/Resources/res/Sprites/daSquarePlumBig.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4426"
+         d="m 1649.3456,296.43653 0,90 90,0 0,-90 -90,0 z m 5,5 80,0 0,80 -80,0 0,-80 z"
+         style="opacity:0.75;fill:#ff00cc;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
+      <rect
+         y="301.43652"
+         x="1654.3457"
+         height="80"
+         width="80"
+         id="rect4428"
+         style="opacity:0.75;fill:#272822;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
+    </g>
+    <g
+       id="g4493"
+       transform="translate(-2.5e-5,0)"
+       inkscape:export-filename="/home/jazzinghen/Projects/CocosProjects/TestGame01/Resources/res/Sprites/daSquareAkaBig.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         style="opacity:0.75;fill:#ff2a2a;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373"
+         d="m 1649.3456,408.1594 0,89.99999 90,0 0,-90 -90,0 z m 5,5 80,0 0,79.99999 -80,0 0,-80 z"
+         id="path4432"
+         inkscape:connector-curvature="0" />
+      <rect
+         style="opacity:0.75;fill:#272822;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373"
+         id="rect4434"
+         width="80"
+         height="80"
+         x="1654.3457"
+         y="413.15936" />
+    </g>
+    <g
+       id="g4488"
+       transform="translate(8.5884,0)"
+       inkscape:export-filename="/home/jazzinghen/Projects/CocosProjects/TestGame01/Resources/res/Sprites/daSquareMidoriBig.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <g
+         id="g4462">
+        <path
+           style="opacity:0.75;fill:#b5ff00;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373"
+           d="m 1755.4116,197.44159 0,90 90,0 0,-90 -90,0 z m 5,5 80,0 0,80 -80,0 0,-80 z"
+           id="path4438"
+           inkscape:connector-curvature="0" />
+        <rect
+           style="opacity:0.75;fill:#272822;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373"
+           id="rect4440"
+           width="80"
+           height="80"
+           x="1760.4117"
+           y="202.44157" />
+      </g>
+    </g>
+    <g
+       id="g4484"
+       transform="translate(8.5884,6.3639526)"
+       inkscape:export-filename="/home/jazzinghen/Projects/CocosProjects/TestGame01/Resources/res/Sprites/daSquareMikuBig.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         style="opacity:0.75;fill:#00ccd1;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373"
+         d="m 1755.4116,296.43653 0,90 90,0 0,-90 -90,0 z m 5,5 80,0 0,80 -80,0 0,-80 z"
+         id="path4444"
+         inkscape:connector-curvature="0" />
+      <rect
+         style="opacity:0.75;fill:#272822;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373"
+         id="rect4446"
+         width="80"
+         height="80"
+         x="1760.4117"
+         y="301.43652" />
+    </g>
+    <g
+       id="g4480"
+       transform="translate(8.5884,0)"
+       inkscape:export-filename="/home/jazzinghen/Projects/CocosProjects/TestGame01/Resources/res/Sprites/daSquareShiroBig.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4450"
+         d="m 1755.4116,408.1594 0,89.99999 90,0 0,-90 -90,0 z m 5,5 80,0 0,79.99999 -80,0 0,-80 z"
+         style="opacity:0.75;fill:#f8f8f2;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
+      <rect
+         y="413.15936"
+         x="1760.4117"
+         height="80"
+         width="80"
+         id="rect4452"
+         style="opacity:0.75;fill:#272822;fill-opacity:1;stroke:none;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373" />
     </g>
   </g>
   <g
