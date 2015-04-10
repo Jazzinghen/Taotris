@@ -3,18 +3,6 @@
 
 USING_NS_CC;
 
-//
-//typedef struct tagResource
-//{
-//    cocos2d::CCSize size;
-//    String directory;
-//}Resource;
-//
-//static Resource SDResource   =  { cocos2d::CCSizeMake(480, 270),   "SD" };
-//static Resource HDResource   =  { cocos2d::CCSizeMake(960, 540),   "HD" };
-//static Resource HDRResource  =  { cocos2d::CCSizeMake(1920, 1080), "HDR" };
-//static cocos2d::CCSize designResolutionSize = cocos2d::CCSizeMake(1920, 1080);
-
 AppDelegate::AppDelegate() {
 
 }
@@ -59,17 +47,27 @@ bool AppDelegate::applicationDidFinishLaunching() {
         glview->setDesignResolutionSize(1920, 1080, ResolutionPolicy::SHOW_ALL);
     }
     
-    
-    
     // turn on display FPS
     director->setDisplayStats(true);
 
     // set FPS. the default value is 1.0/60 if you don't call this
     director->setAnimationInterval(1.0 / 60);
 
+        
+    auto screenSize = director->getWinSize();
+    
     // loads the spritesheet into the manager
     auto squareCache = SpriteFrameCache::getInstance();
-    squareCache->addSpriteFramesWithFile("res/SpriteSheets/HDR/TaotrisRes.plist");
+    
+    if (screenSize.height >= 1080) {
+        squareCache->addSpriteFramesWithFile("res/SpriteSheets/HDR/TaotrisRes.plist");
+    } else if (screenSize.height >= 540) {
+        squareCache->addSpriteFramesWithFile("res/SpriteSheets/HD/TaotrisRes.plist");
+    } else {
+        squareCache->addSpriteFramesWithFile("res/SpriteSheets/SD/TaotrisRes.plist");
+    }
+
+    
     
     // create a scene. it's an autorelease object
     auto scene = HelloWorld::createScene();
