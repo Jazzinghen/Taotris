@@ -44,3 +44,7 @@ CMakeCache.txt
 CMakeFiles
 Makefile
 install_manifest.txt
+
+# Texture Packer project files
+
+*.tps
