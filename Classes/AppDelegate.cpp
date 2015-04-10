@@ -27,7 +27,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
     if(!glview) {
-        glview = GLViewImpl::create("My Game");
+        glview = GLViewImpl::create("Taotris");
         director->setOpenGLView(glview);
     }
 
@@ -39,7 +39,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     // loads the spritesheet into the manager
     auto squareCache = SpriteFrameCache::getInstance();
-    squareCache->addSpriteFramesWithFile("res/Sprites/HDR/Squares.plist");
+    squareCache->addSpriteFramesWithFile("res/SpriteSheets/HDR/Squares.plist");
     
     // create a scene. it's an autorelease object
     auto scene = HelloWorld::createScene();
