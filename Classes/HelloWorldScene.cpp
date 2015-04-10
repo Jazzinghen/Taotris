@@ -51,7 +51,7 @@ bool HelloWorld::init()
     // Adding spriteNode
     this->addChild(spriteNode,-1);
     this->addChild(grids);
-    this->addChild(background, -1);
+    this->addChild(background, -10);
     
     // Adding Squares to the spriteNode
     spriteNode->addChild(daSquareBro,0);

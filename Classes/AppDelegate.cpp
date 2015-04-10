@@ -64,9 +64,9 @@ bool AppDelegate::applicationDidFinishLaunching() {
     // loads the spritesheet into the manager
     auto squareCache = SpriteFrameCache::getInstance();
     
-    if (screenSize.height >= 1080) {
+    if (screenSize.height >= 540) {
         squareCache->addSpriteFramesWithFile("res/SpriteSheets/HDR/TaotrisRes.plist");
-    } else if (screenSize.height >= 540) {
+    } else if (screenSize.height >= 270) {
         squareCache->addSpriteFramesWithFile("res/SpriteSheets/HD/TaotrisRes.plist");
     } else {
         squareCache->addSpriteFramesWithFile("res/SpriteSheets/SD/TaotrisRes.plist");
