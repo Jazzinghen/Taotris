@@ -9,6 +9,9 @@
 #define	GRIDMANAGER_H
 
 #include "cocos2d.h"
+#if defined(WIN32) || defined(_WIN32) || defined(__WIN32) && !defined(__CYGWIN__)
+	#include <array> 
+#endif
 
 class GridManager : public cocos2d::Node{
 public:
