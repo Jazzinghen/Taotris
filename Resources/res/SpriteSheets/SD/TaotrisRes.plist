@@ -218,13 +218,13 @@
             <key>format</key>
             <integer>2</integer>
             <key>realTextureFileName</key>
-            <string>TaotrisRes.webp</string>
+            <string>TaotrisRes.png</string>
             <key>size</key>
             <string>{484,501}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:c2c7b1fb030c3fd1a28cd2bb39598787:f88a5ece858251a3be830706552a8eb2:ae10ba4e321433e4b955bb4e2f785dc7$</string>
+            <string>$TexturePacker:SmartUpdate:6d81bcd28511ce32473456c0dc182c44:f88a5ece858251a3be830706552a8eb2:a1987671ac0d848d1defe536faef5099$</string>
             <key>textureFileName</key>
-            <string>TaotrisRes.webp</string>
+            <string>TaotrisRes.png</string>
         </dict>
     </dict>
 </plist>
