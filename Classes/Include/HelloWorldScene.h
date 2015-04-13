@@ -2,6 +2,7 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
+#include "Taotromino.h"
 
 class HelloWorld : public cocos2d::Layer
 {
@@ -17,6 +18,8 @@ public:
     
     // implement the "static create()" method manually
     CREATE_FUNC(HelloWorld);
+    
+    void update(float delta) override;
 };
 
 #endif // __HELLOWORLD_SCENE_H__

@@ -42,9 +42,10 @@ bool HelloWorld::init()
     
     // Loading SquareBro from the SpriteSheet
     auto daSquareBro = Sprite::createWithSpriteFrameName("daSquareBro.png");
-    daSquareBro->setPosition(100, 200);
+    daSquareBro->setPosition(0, 90);
+    daSquareBro->setAnchorPoint(Vec2(0, 0));
     
-    auto daSquareSis = Sprite::createWithSpriteFrameName("daSquareSis.png");
+    auto daSquareSis = Sprite::createWithSpriteFrameName("daSquareSisBig.png");
     daSquareSis->setPosition(225, 225);
     daSquareSis->setScale(1,1);
     
@@ -58,6 +59,10 @@ bool HelloWorld::init()
     spriteNode->addChild(daSquareSis,0);
     
     return true;
+}
+
+void HelloWorld::update(float delta){
+    
 }
 
 
