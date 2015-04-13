@@ -26,9 +26,23 @@ void AppDelegate::initGLContextAttrs()
 
 bool AppDelegate::applicationDidFinishLaunching() {
     
+        typedef struct
+        {
+            Size size;
+            char directory[100];
+        }jazzResource_t;
+
+        const jazzResource_t SDResource   =  { Size(480, 270),  "SD" };
+        const jazzResource_t HDResource   =  { Size(960, 540),  "HD" };
+        const jazzResource_t HDRResource  =  { Size(1920, 1080), "HDR" };
+        const Size designResolutionSize = Size(1920, 1080);
+    
     // initialize director
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
+    auto fileUtils = FileUtils::getInstance();
+    std::vector <std::string> resourceFolders;
+    
     if(!glview) {
         glview = GLViewImpl::create("Taotris");
         //glview->setDesignResolutionSize(1920, 1080, (ResolutionPolicy) 3 );
@@ -46,8 +60,9 @@ bool AppDelegate::applicationDidFinishLaunching() {
          * 
          *   Put it AFTER the initialisation of the OpenGL view. I'm dumb.
          */
-        glview->setFrameSize(1280, 720);
-        glview->setDesignResolutionSize(1920, 1080, ResolutionPolicy::SHOW_ALL);
+        //glview->setFrameSize(854, 480);
+        glview->setDesignResolutionSize(designResolutionSize.width, designResolutionSize.height, ResolutionPolicy::SHOW_ALL);
+        //glview->setDesignResolutionSize(1920, 1080, ResolutionPolicy::SHOW_ALL);
     }
     
     // turn on display FPS
@@ -64,16 +79,19 @@ bool AppDelegate::applicationDidFinishLaunching() {
     // loads the spritesheet into the manager
     auto squareCache = SpriteFrameCache::getInstance();
     
-    if (screenSize.height >= 540) {
-        squareCache->addSpriteFramesWithFile("res/SpriteSheets/HDR/TaotrisRes.plist");
-        director->setContentScaleFactor(1080.0/1080.0);
-    } else if (screenSize.height >= 270) {
-        squareCache->addSpriteFramesWithFile("res/SpriteSheets/HD/TaotrisRes.plist");
-        director->setContentScaleFactor(540.0/1080.0);
+    if (screenSize.height > 540) {
+        resourceFolders.push_back(HDRResource.directory);
+        director->setContentScaleFactor(HDRResource.size.height/1080.0);
+    } else if (screenSize.height > 270) {
+        resourceFolders.push_back(HDResource.directory);
+        director->setContentScaleFactor(HDResource.size.height/1080.0);
     } else {
-        squareCache->addSpriteFramesWithFile("res/SpriteSheets/SD/TaotrisRes.plist");
-        director->setContentScaleFactor(270.0/1080.0);
+        resourceFolders.push_back(SDResource.directory);
+        director->setContentScaleFactor(SDResource.size.height/1080.0);
     }
+    
+    fileUtils->setSearchPaths(resourceFolders);
+    squareCache->addSpriteFramesWithFile("TaotrisRes.plist");
     
     
     // create a scene. it's an autorelease object

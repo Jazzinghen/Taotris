@@ -7,210 +7,210 @@
             <key>background.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2},{1920,1080}}</string>
+                <string>{{2,2},{960,540}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{1920,1080}}</string>
+                <string>{{0,0},{960,540}}</string>
                 <key>sourceSize</key>
-                <string>{1920,1080}</string>
+                <string>{960,540}</string>
             </dict>
             <key>daSquareAka.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1444,1084},{90,90}}</string>
+                <string>{{724,544},{45,45}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{90,90}}</string>
+                <string>{{0,0},{45,45}}</string>
                 <key>sourceSize</key>
-                <string>{90,90}</string>
+                <string>{45,45}</string>
             </dict>
             <key>daSquareAkaBig.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1536,1084},{90,90}}</string>
+                <string>{{771,544},{45,45}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{90,90}}</string>
+                <string>{{0,0},{45,45}}</string>
                 <key>sourceSize</key>
-                <string>{90,90}</string>
+                <string>{45,45}</string>
             </dict>
             <key>daSquareBro.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1628,1084},{90,90}}</string>
+                <string>{{818,544},{45,45}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{90,90}}</string>
+                <string>{{0,0},{45,45}}</string>
                 <key>sourceSize</key>
-                <string>{90,90}</string>
+                <string>{45,45}</string>
             </dict>
             <key>daSquareBroBig.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1720,1084},{90,90}}</string>
+                <string>{{865,544},{45,45}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{90,90}}</string>
+                <string>{{0,0},{45,45}}</string>
                 <key>sourceSize</key>
-                <string>{90,90}</string>
+                <string>{45,45}</string>
             </dict>
             <key>daSquareMidori.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1812,1084},{90,90}}</string>
+                <string>{{912,544},{45,45}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{90,90}}</string>
+                <string>{{0,0},{45,45}}</string>
                 <key>sourceSize</key>
-                <string>{90,90}</string>
+                <string>{45,45}</string>
             </dict>
             <key>daSquareMidoriBig.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1444,1176},{90,90}}</string>
+                <string>{{724,591},{45,45}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{90,90}}</string>
+                <string>{{0,0},{45,45}}</string>
                 <key>sourceSize</key>
-                <string>{90,90}</string>
+                <string>{45,45}</string>
             </dict>
             <key>daSquareMiku.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1536,1176},{90,90}}</string>
+                <string>{{771,591},{45,45}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{90,90}}</string>
+                <string>{{0,0},{45,45}}</string>
                 <key>sourceSize</key>
-                <string>{90,90}</string>
+                <string>{45,45}</string>
             </dict>
             <key>daSquareMikuBig.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1628,1176},{90,90}}</string>
+                <string>{{818,591},{45,45}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{90,90}}</string>
+                <string>{{0,0},{45,45}}</string>
                 <key>sourceSize</key>
-                <string>{90,90}</string>
+                <string>{45,45}</string>
             </dict>
             <key>daSquarePlum.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1720,1176},{90,90}}</string>
+                <string>{{865,591},{45,45}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{90,90}}</string>
+                <string>{{0,0},{45,45}}</string>
                 <key>sourceSize</key>
-                <string>{90,90}</string>
+                <string>{45,45}</string>
             </dict>
             <key>daSquarePlumBig.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1812,1176},{90,90}}</string>
+                <string>{{912,591},{45,45}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{90,90}}</string>
+                <string>{{0,0},{45,45}}</string>
                 <key>sourceSize</key>
-                <string>{90,90}</string>
+                <string>{45,45}</string>
             </dict>
             <key>daSquareShiro.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1444,1268},{90,90}}</string>
+                <string>{{724,638},{45,45}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{90,90}}</string>
+                <string>{{0,0},{45,45}}</string>
                 <key>sourceSize</key>
-                <string>{90,90}</string>
+                <string>{45,45}</string>
             </dict>
             <key>daSquareShiroBig.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1536,1268},{90,90}}</string>
+                <string>{{771,638},{45,45}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{90,90}}</string>
+                <string>{{0,0},{45,45}}</string>
                 <key>sourceSize</key>
-                <string>{90,90}</string>
+                <string>{45,45}</string>
             </dict>
             <key>daSquareSis.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1628,1268},{90,90}}</string>
+                <string>{{818,638},{45,45}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{90,90}}</string>
+                <string>{{0,0},{45,45}}</string>
                 <key>sourceSize</key>
-                <string>{90,90}</string>
+                <string>{45,45}</string>
             </dict>
             <key>daSquareSisBig.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1720,1268},{90,90}}</string>
+                <string>{{865,638},{45,45}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{90,90}}</string>
+                <string>{{0,0},{45,45}}</string>
                 <key>sourceSize</key>
-                <string>{90,90}</string>
+                <string>{45,45}</string>
             </dict>
             <key>mainGrid.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,1084},{1440,900}}</string>
+                <string>{{2,544},{720,450}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{1440,900}}</string>
+                <string>{{0,0},{720,450}}</string>
                 <key>sourceSize</key>
-                <string>{1440,900}</string>
+                <string>{720,450}</string>
             </dict>
         </dict>
         <key>metadata</key>
@@ -220,9 +220,9 @@
             <key>realTextureFileName</key>
             <string>TaotrisRes.webp</string>
             <key>size</key>
-            <string>{1924,1986}</string>
+            <string>{964,996}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:c2c7b1fb030c3fd1a28cd2bb39598787:f88a5ece858251a3be830706552a8eb2:ae10ba4e321433e4b955bb4e2f785dc7$</string>
+            <string>$TexturePacker:SmartUpdate:ded6489108add122569b8d0458ff21ce:f88a5ece858251a3be830706552a8eb2:ae10ba4e321433e4b955bb4e2f785dc7$</string>
             <key>textureFileName</key>
             <string>TaotrisRes.webp</string>
         </dict>
