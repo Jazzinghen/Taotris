@@ -1,5 +1,9 @@
+#include <fstream>
+#include <iostream>
+
 #include "Include/HelloWorldScene.h"
 #include "Include/GridManager.h"
+#include "Include/Taotromino.h"
 
 USING_NS_CC;
 
@@ -58,6 +62,16 @@ bool HelloWorld::init()
     spriteNode->addChild(daSquareBro,0);
     spriteNode->addChild(daSquareSis,0);
     
+    std::cout << "Creating Taotromino" << std::endl;
+    currentTao = new Taotromino(Taotromino::Line);
+     std::cout << "Setting Location" << std::endl;
+    currentTao->setPosition((90 + 90*16) - 45, (90 + 90*5) - 45);
+    
+     std::cout << "Adding Taotromino to scene" << std::endl;
+    spriteNode->addChild(currentTao, 2);
+     std::cout << "End" << std::endl;
+
+     
     return true;
 }
 

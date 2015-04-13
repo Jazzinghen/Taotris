@@ -10,17 +10,28 @@
 
 #include "cocos2d.h"
 
-typedef enum {
-    Square, Line, T, S, Z, J, L
-} taotromino_t;
+class Taotromino : public cocos2d::Node{
+public:    
+    typedef enum {
+        Square, Line, T, S, Z, J, L
+    } taotromino_t;
 
-class Taotromino : public cocos2d::Sprite{
-public:
     Taotromino(taotromino_t type);
     Taotromino(const Taotromino& orig);
     virtual ~Taotromino();
-private:
 
+    void SetType(taotromino_t type) {
+        this->type = type;
+    }
+
+    taotromino_t GetType() const {
+        return type;
+    }
+    
+private:
+    taotromino_t type;
+    //Vec2 location;
+    int rotation = 0;
 };
 
 #endif	/* TAOTROMINO_H */

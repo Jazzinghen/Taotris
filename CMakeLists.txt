@@ -117,6 +117,7 @@ set(GAME_SRC
   Classes/AppDelegate.cpp
   Classes/HelloWorldScene.cpp
   Classes/GridManager.cpp
+  Classes/Taotromino.cpp
   ${PLATFORM_SPECIFIC_SRC}
 )
 
@@ -124,6 +125,7 @@ set(GAME_HEADERS
   Classes/Include/AppDelegate.h
   Classes/Include/HelloWorldScene.h
   Classes/Include/GridManager.h
+  Classes/Include/Taotromino.h
   ${PLATFORM_SPECIFIC_HEADERS}
 )
 
