@@ -45,12 +45,12 @@ bool HelloWorld::init()
     daSquareBro->setPosition(100, 200);
     
     auto daSquareSis = Sprite::createWithSpriteFrameName("daSquareSis.png");
-    daSquareSis->setPosition(400, 200);
-    daSquareSis->setScale(0.5,0.5);
+    daSquareSis->setPosition(225, 225);
+    daSquareSis->setScale(1,1);
     
     // Adding spriteNode
     this->addChild(spriteNode,-1);
-    this->addChild(grids);
+    this->addChild(grids, -9);
     this->addChild(background, -10);
     
     // Adding Squares to the spriteNode

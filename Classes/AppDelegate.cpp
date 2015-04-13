@@ -66,10 +66,13 @@ bool AppDelegate::applicationDidFinishLaunching() {
     
     if (screenSize.height >= 540) {
         squareCache->addSpriteFramesWithFile("res/SpriteSheets/HDR/TaotrisRes.plist");
+        director->setContentScaleFactor(1080.0/1080.0);
     } else if (screenSize.height >= 270) {
         squareCache->addSpriteFramesWithFile("res/SpriteSheets/HD/TaotrisRes.plist");
+        director->setContentScaleFactor(540.0/1080.0);
     } else {
         squareCache->addSpriteFramesWithFile("res/SpriteSheets/SD/TaotrisRes.plist");
+        director->setContentScaleFactor(270.0/1080.0);
     }
     
     
