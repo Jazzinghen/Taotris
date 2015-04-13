@@ -60,7 +60,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
          * 
          *   Put it AFTER the initialisation of the OpenGL view. I'm dumb.
          */
-        //glview->setFrameSize(854, 480);
+        glview->setFrameSize(854, 480);
         glview->setDesignResolutionSize(designResolutionSize.width, designResolutionSize.height, ResolutionPolicy::SHOW_ALL);
         //glview->setDesignResolutionSize(1920, 1080, ResolutionPolicy::SHOW_ALL);
     }
