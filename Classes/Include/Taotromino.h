@@ -35,6 +35,7 @@ public:
     
 private:
     taotromino_t type;
+    // taoSize is needed to access the mathematical representation of the tetramino
     int taoSize;
     // taoCentre = [x, y] in pixels for rotation
     int taoCentre[2];

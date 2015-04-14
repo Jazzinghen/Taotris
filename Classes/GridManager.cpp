@@ -48,6 +48,21 @@ std::string GridManager::BlockName(Taotromino::taotromino_t blockType){
         case Taotromino::Square:
             return "daSquareMomoBig";
             break;
+        case Taotromino::T:
+            return "daSquareMikuBig";
+            break;
+        case Taotromino::J:
+            return "daSquareAkaBig";
+            break;
+        case Taotromino::L:
+            return "daSquareShiroBig";
+            break;
+        case Taotromino::S:
+            return "daSquareOnii";
+            break;
+        case Taotromino::Z:
+            return "daSquareOnee";
+            break;
         default:
             return NULL;
             break;
