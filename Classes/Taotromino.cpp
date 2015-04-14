@@ -179,13 +179,13 @@ Taotromino::Taotromino(taotromino_t type) {
     
      std::cout << "Generating Sprites" << std::endl;
     
-    auto firstSquare = Sprite::createWithSpriteFrameName("daSquareMidoriBig.png");
+    auto firstSquare = Sprite::createWithSpriteFrameName("daSquareMidoriBig");
     firstSquare->setPosition(0,0);
-    auto secondSquare = Sprite::createWithSpriteFrameName("daSquareMidoriBig.png");
+    auto secondSquare = Sprite::createWithSpriteFrameName("daSquareMidoriBig");
     secondSquare->setPosition(-90,0);
-    auto thirdSquare = Sprite::createWithSpriteFrameName("daSquareMidoriBig.png");
+    auto thirdSquare = Sprite::createWithSpriteFrameName("daSquareMidoriBig");
     thirdSquare->setPosition(90,0);
-    auto fourthSquare = Sprite::createWithSpriteFrameName("daSquareMidoriBig.png");
+    auto fourthSquare = Sprite::createWithSpriteFrameName("daSquareMidoriBig");
     fourthSquare->setPosition(180,0);
     
      std::cout << "Adding Sprites to the Taotromino" << std::endl;

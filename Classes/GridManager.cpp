@@ -7,6 +7,7 @@
 
 #include <fstream>
 #include <iostream>
+#include <string>
 
 #include "Include/GridManager.h"
 #include "Include/Taotromino.h"
@@ -14,7 +15,7 @@
 USING_NS_CC;
 
 GridManager::GridManager() {
-    auto mainGrid = Sprite::createWithSpriteFrameName("mainGrid.png");
+    auto mainGrid = Sprite::createWithSpriteFrameName("mainGrid");
     mainGrid->setAnchorPoint(Vec2(0, 0));
     mainGrid->setPosition(90, 90);
     
@@ -38,3 +39,17 @@ GridManager::GridManager(const GridManager& orig) {
 GridManager::~GridManager() {
 }
 
+std::string GridManager::BlockName(Taotromino::taotromino_t blockType){
+    
+    switch (blockType){
+        case Taotromino::Line:
+            return "daSquareMidoriBig";
+            break;
+        case Taotromino::Square:
+            return "daSquareMomoBig";
+            break;
+        default:
+            return NULL;
+            break;
+    }
+}

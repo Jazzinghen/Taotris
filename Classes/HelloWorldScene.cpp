@@ -40,16 +40,16 @@ bool HelloWorld::init()
     // Using an empty node to maintain all of the game sprites
     auto spriteNode = Node::create();
     
-    auto background = Sprite::createWithSpriteFrameName("background.png");
+    auto background = Sprite::createWithSpriteFrameName("background");
     background->setAnchorPoint(Vec2(0, 0));
     background->setPosition(0, 0);
     
     // Loading SquareBro from the SpriteSheet
-    auto daSquareBro = Sprite::createWithSpriteFrameName("daSquareBro.png");
+    auto daSquareBro = Sprite::createWithSpriteFrameName("daSquareOtouto");
     daSquareBro->setPosition(0, 90);
     daSquareBro->setAnchorPoint(Vec2(0, 0));
     
-    auto daSquareSis = Sprite::createWithSpriteFrameName("daSquareSisBig.png");
+    auto daSquareSis = Sprite::createWithSpriteFrameName("daSquareOnee");
     daSquareSis->setPosition(225, 225);
     daSquareSis->setScale(1,1);
     
