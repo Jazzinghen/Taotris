@@ -29,13 +29,16 @@ public:
         return type;
     }
     
-    void SetTaoLocation(int[] taoLocation);
-    void GetTaoLocation(int[] &taoLocation);
+    void TaoStep () {
+        taoLocation[0]++;
+    };
     
 private:
     taotromino_t type;
     int taoSize;
+    // taoCentre = [x, y] in pixels for rotation
     int taoCentre[2];
+    // taoLocation = [x, y] in col, rows
     int taoLocation[2];
     int rotation = 0;
 

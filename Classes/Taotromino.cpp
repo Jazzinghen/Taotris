@@ -196,13 +196,7 @@ Taotromino::Taotromino(taotromino_t type) {
     this->addChild(fourthSquare);
 }
 
-void Taotromino::SetTaolocation(int[] taolocation) {
-    this->taolocation = taolocation;
-}
 
-int[] Taotromino::GetTaolocation() const {
-    return taolocation;
-}
 
 Taotromino::Taotromino(const Taotromino& orig) {
 }
