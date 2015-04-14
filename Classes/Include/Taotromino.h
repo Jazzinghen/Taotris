@@ -1,5 +1,6 @@
 /* 
  * File:   Taotromino.h
+ * 
  * Author: jazzinghen
  *
  * Created on 13 April 2015, 18:29
@@ -13,7 +14,7 @@
 class Taotromino : public cocos2d::Node{
 public:    
     typedef enum {
-        Square, Line, T, S, Z, J, L
+        Empty, Square, Line, T, S, Z, J, L
     } taotromino_t;
 
     Taotromino(taotromino_t type);
@@ -28,10 +29,23 @@ public:
         return type;
     }
     
+    void SetTaoLocation(int[] taoLocation);
+    void GetTaoLocation(int[] &taoLocation);
+    
 private:
     taotromino_t type;
-    //Vec2 location;
+    int taoSize;
+    int taoCentre[2];
+    int taoLocation[2];
     int rotation = 0;
+
+    static const Taotromino::taotromino_t lineDefinition[4][4][4];
+    static const Taotromino::taotromino_t squareDefinition[4][2][2];
+    static const Taotromino::taotromino_t tDefinition[4][3][3];
+    static const Taotromino::taotromino_t lDefinition[4][3][3];
+    static const Taotromino::taotromino_t jDefinition[4][3][3];
+    static const Taotromino::taotromino_t sDefinition[4][3][3];
+    static const Taotromino::taotromino_t zDefinition[4][3][3];
 };
 
 #endif	/* TAOTROMINO_H */
