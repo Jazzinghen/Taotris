@@ -66,6 +66,7 @@ bool HelloWorld::init()
     currentTao = new Taotromino(Taotromino::Line);
      std::cout << "Setting Location" << std::endl;
     currentTao->setPosition((90 + 90*16) - 45, (90 + 90*5) - 45);
+    currentTao->setRotation(90.0);
     
      std::cout << "Adding Taotromino to scene" << std::endl;
     spriteNode->addChild(currentTao, 2);
