@@ -12,6 +12,12 @@
 #include "Include/GridManager.h"
 #include "Include/Taotromino.h"
 #include "Include/LineTaotromino.h"
+#include "Include/SquareTaotromino.h"
+#include "Include/TTaotromino.h"
+#include "Include/JTaotromino.h"
+#include "Include/LTaotromino.h"
+#include "Include/STaotromino.h"
+#include "Include/ZTaotromino.h"
 
 USING_NS_CC;
 
