@@ -10,16 +10,21 @@
 #define	TAOTROMINO_H
 
 #include "cocos2d.h"
+#include <iostream>
+#include <fstream>
+#include <array>
 
-class Taotromino : public cocos2d::Node{
+class Taotromino : public cocos2d::Node{    
 public:    
     typedef enum {
         Empty, Square, Line, T, S, Z, J, L
     } taotromino_t;
 
-    Taotromino(taotromino_t type);
-    Taotromino(const Taotromino& orig);
+    Taotromino();
+    
     virtual ~Taotromino();
+    
+    void rotate();
 
     void SetType(taotromino_t type) {
         this->type = type;
@@ -29,11 +34,7 @@ public:
         return type;
     }
     
-    void TaoStep () {
-        taoLocation[0]++;
-    };
-    
-private:
+protected:
     taotromino_t type;
     // taoSize is needed to access the mathematical representation of the tetramino
     int taoSize;
@@ -42,6 +43,7 @@ private:
     // taoLocation = [x, y] in col, rows
     int taoLocation[2];
     int rotation = 0;
+    std::array<std::array<std::array<Taotromino::taotromino_t, (std::size_t) 4>, (std::size_t) 4>, (std::size_t) 4> taoDefinition;
 
     static const Taotromino::taotromino_t lineDefinition[4][4][4];
     static const Taotromino::taotromino_t squareDefinition[4][2][2];

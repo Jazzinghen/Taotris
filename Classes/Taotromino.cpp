@@ -12,32 +12,7 @@
 
 USING_NS_CC;
 
-const Taotromino::taotromino_t lineDefinition[4][4][4] = {
-    {
-        {Taotromino::Line, Taotromino::Empty, Taotromino::Empty, Taotromino::Empty},
-        {Taotromino::Line, Taotromino::Empty, Taotromino::Empty, Taotromino::Empty},
-        {Taotromino::Line, Taotromino::Empty, Taotromino::Empty, Taotromino::Empty},
-        {Taotromino::Line, Taotromino::Empty, Taotromino::Empty, Taotromino::Empty}
-    },
-    {
-        {Taotromino::Line, Taotromino::Line, Taotromino::Line, Taotromino::Line},
-        {Taotromino::Empty, Taotromino::Empty, Taotromino::Empty, Taotromino::Empty},
-        {Taotromino::Empty, Taotromino::Empty, Taotromino::Empty, Taotromino::Empty},
-        {Taotromino::Empty, Taotromino::Empty, Taotromino::Empty, Taotromino::Empty}
-    },
-    {
-        {Taotromino::Line, Taotromino::Empty, Taotromino::Empty, Taotromino::Empty},
-        {Taotromino::Line, Taotromino::Empty, Taotromino::Empty, Taotromino::Empty},
-        {Taotromino::Line, Taotromino::Empty, Taotromino::Empty, Taotromino::Empty},
-        {Taotromino::Line, Taotromino::Empty, Taotromino::Empty, Taotromino::Empty}
-    },
-    {
-        {Taotromino::Line, Taotromino::Line, Taotromino::Line, Taotromino::Line},
-        {Taotromino::Empty, Taotromino::Empty, Taotromino::Empty, Taotromino::Empty},
-        {Taotromino::Empty, Taotromino::Empty, Taotromino::Empty, Taotromino::Empty},
-        {Taotromino::Empty, Taotromino::Empty, Taotromino::Empty, Taotromino::Empty}
-    }
-};
+
 
 const Taotromino::taotromino_t Taotromino::squareDefinition[4][2][2] = {
     {
@@ -173,36 +148,12 @@ const Taotromino::taotromino_t Taotromino::zDefinition[4][3][3]{
     }
 };
 
-Taotromino::Taotromino(taotromino_t type) {
-    
-    std::cout << "Setting Type: " << type << std::endl;
-    Taotromino::SetType(type);
-    taoSize = 4;
-    
-    std::cout << "Generating Sprites" << std::endl;
-    
-    auto firstSquare = Sprite::createWithSpriteFrameName("daSquareMidoriBig");
-    firstSquare->setPosition(0,0);
-    auto secondSquare = Sprite::createWithSpriteFrameName("daSquareMidoriBig");
-    secondSquare->setPosition(-90,0);
-    auto thirdSquare = Sprite::createWithSpriteFrameName("daSquareMidoriBig");
-    thirdSquare->setPosition(90,0);
-    auto fourthSquare = Sprite::createWithSpriteFrameName("daSquareMidoriBig");
-    fourthSquare->setPosition(180,0);
-    
-    std::cout << "Adding Sprites to the Taotromino" << std::endl;
-    
-    this->addChild(firstSquare);
-    this->addChild(secondSquare);
-    this->addChild(thirdSquare);
-    this->addChild(fourthSquare);
-}
-
-
-
-Taotromino::Taotromino(const Taotromino& orig) {
+Taotromino::Taotromino() {
 }
 
 Taotromino::~Taotromino() {
 }
 
+void Taotromino::rotate(){
+    rotation = (rotation + 1) % 4;
+}

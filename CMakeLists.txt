@@ -118,6 +118,7 @@ set(GAME_SRC
   Classes/HelloWorldScene.cpp
   Classes/GridManager.cpp
   Classes/Taotromino.cpp
+  Classes/LineTaotromino.cpp
   ${PLATFORM_SPECIFIC_SRC}
 )
 
@@ -126,7 +127,8 @@ set(GAME_HEADERS
   Classes/Include/HelloWorldScene.h
   Classes/Include/GridManager.h
   Classes/Include/Taotromino.h
-  ${PLATFORM_SPECIFIC_HEADERS}
+  Classes/Include/LineTaotromino.h  
+${PLATFORM_SPECIFIC_HEADERS}
 )
 
 if(GAME_HEADERS)

@@ -11,6 +11,7 @@
 
 #include "Include/GridManager.h"
 #include "Include/Taotromino.h"
+#include "Include/LineTaotromino.h"
 
 USING_NS_CC;
 
@@ -22,7 +23,7 @@ GridManager::GridManager() {
     this->addChild(mainGrid);
     
      std::cout << "Creating Taotromino" << std::endl;
-    currentTao = new Taotromino(Taotromino::Line);
+    currentTao = new LineTaotromino(5);
      std::cout << "Setting Location" << std::endl;
     currentTao->setPosition((90 + 90*16) - 45, (90 + 90*5) - 45);
     currentTao->setRotation(90.0);
