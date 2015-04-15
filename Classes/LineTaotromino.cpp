@@ -20,9 +20,9 @@ LineTaotromino::LineTaotromino(int y) {
     
     // 0° rotation
     taoDefinition[0][0][0] = Taotromino::Line;
-    taoDefinition[0][0][1] = Taotromino::Empty;
-    taoDefinition[0][0][2] = Taotromino::Empty;
-    taoDefinition[0][0][3] = Taotromino::Empty;
+    taoDefinition[0][0][1] = Taotromino::Line;
+    taoDefinition[0][0][2] = Taotromino::Line;
+    taoDefinition[0][0][3] = Taotromino::Line;
     
     taoDefinition[0][1][0] = Taotromino::Line;
     taoDefinition[0][1][1] = Taotromino::Empty;

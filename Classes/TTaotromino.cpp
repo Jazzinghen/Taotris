@@ -19,38 +19,38 @@ TTaotromino::TTaotromino(int y) {
      */
     
     // 0° rotation
-    taoDefinition[0][0][0] = Taotromino::Line;
-    taoDefinition[0][0][1] = Taotromino::Empty;
+    taoDefinition[0][0][0] = Taotromino::Empty;
+    taoDefinition[0][0][1] = Taotromino::T;
     taoDefinition[0][0][2] = Taotromino::Empty;
     taoDefinition[0][0][3] = Taotromino::Empty;
     
-    taoDefinition[0][1][0] = Taotromino::Line;
-    taoDefinition[0][1][1] = Taotromino::Empty;
-    taoDefinition[0][1][2] = Taotromino::Empty;
+    taoDefinition[0][1][0] = Taotromino::T;
+    taoDefinition[0][1][1] = Taotromino::T;
+    taoDefinition[0][1][2] = Taotromino::T;
     taoDefinition[0][1][3] = Taotromino::Empty;
     
-    taoDefinition[0][2][0] = Taotromino::Line;
+    taoDefinition[0][2][0] = Taotromino::Empty;
     taoDefinition[0][2][1] = Taotromino::Empty;
     taoDefinition[0][2][2] = Taotromino::Empty;
     taoDefinition[0][2][3] = Taotromino::Empty;
     
-    taoDefinition[0][3][0] = Taotromino::Line;
+    taoDefinition[0][3][0] = Taotromino::Empty;
     taoDefinition[0][3][1] = Taotromino::Empty;
     taoDefinition[0][3][2] = Taotromino::Empty;
     taoDefinition[0][3][3] = Taotromino::Empty;
     
     // 90° rotation
-    taoDefinition[1][0][0] = Taotromino::Line;
-    taoDefinition[1][0][1] = Taotromino::Line;
-    taoDefinition[1][0][2] = Taotromino::Line;
-    taoDefinition[1][0][3] = Taotromino::Line;
+    taoDefinition[1][0][0] = Taotromino::T;
+    taoDefinition[1][0][1] = Taotromino::Empty;
+    taoDefinition[1][0][2] = Taotromino::Empty;
+    taoDefinition[1][0][3] = Taotromino::Empty;
     
-    taoDefinition[1][1][0] = Taotromino::Empty;
-    taoDefinition[1][1][1] = Taotromino::Empty;
+    taoDefinition[1][1][0] = Taotromino::T;
+    taoDefinition[1][1][1] = Taotromino::T;
     taoDefinition[1][1][2] = Taotromino::Empty;
     taoDefinition[1][1][3] = Taotromino::Empty;
     
-    taoDefinition[1][2][0] = Taotromino::Empty;
+    taoDefinition[1][2][0] = Taotromino::T;
     taoDefinition[1][2][1] = Taotromino::Empty;
     taoDefinition[1][2][2] = Taotromino::Empty;
     taoDefinition[1][2][3] = Taotromino::Empty;
@@ -61,39 +61,39 @@ TTaotromino::TTaotromino(int y) {
     taoDefinition[1][3][3] = Taotromino::Empty;
     
     // 180° rotation
-    taoDefinition[2][0][0] = Taotromino::Line;
-    taoDefinition[2][0][1] = Taotromino::Empty;
-    taoDefinition[2][0][2] = Taotromino::Empty;
+    taoDefinition[2][0][0] = Taotromino::T;
+    taoDefinition[2][0][1] = Taotromino::T;
+    taoDefinition[2][0][2] = Taotromino::T;
     taoDefinition[2][0][3] = Taotromino::Empty;
     
-    taoDefinition[2][1][0] = Taotromino::Line;
-    taoDefinition[2][1][1] = Taotromino::Empty;
+    taoDefinition[2][1][0] = Taotromino::Empty;
+    taoDefinition[2][1][1] = Taotromino::T;
     taoDefinition[2][1][2] = Taotromino::Empty;
     taoDefinition[2][1][3] = Taotromino::Empty;
     
-    taoDefinition[2][2][0] = Taotromino::Line;
+    taoDefinition[2][2][0] = Taotromino::Empty;
     taoDefinition[2][2][1] = Taotromino::Empty;
     taoDefinition[2][2][2] = Taotromino::Empty;
     taoDefinition[2][2][3] = Taotromino::Empty;
     
-    taoDefinition[2][3][0] = Taotromino::Line;
+    taoDefinition[2][3][0] = Taotromino::Empty;
     taoDefinition[2][3][1] = Taotromino::Empty;
     taoDefinition[2][3][2] = Taotromino::Empty;
     taoDefinition[2][3][3] = Taotromino::Empty;
     
     // 270° rotation
-    taoDefinition[1][0][0] = Taotromino::Line;
-    taoDefinition[1][0][1] = Taotromino::Line;
-    taoDefinition[1][0][2] = Taotromino::Line;
-    taoDefinition[1][0][3] = Taotromino::Line;
+    taoDefinition[1][0][0] = Taotromino::Empty;
+    taoDefinition[1][0][1] = Taotromino::T;
+    taoDefinition[1][0][2] = Taotromino::Empty;
+    taoDefinition[1][0][3] = Taotromino::Empty;
     
-    taoDefinition[1][1][0] = Taotromino::Empty;
-    taoDefinition[1][1][1] = Taotromino::Empty;
+    taoDefinition[1][1][0] = Taotromino::T;
+    taoDefinition[1][1][1] = Taotromino::T;
     taoDefinition[1][1][2] = Taotromino::Empty;
     taoDefinition[1][1][3] = Taotromino::Empty;
     
     taoDefinition[1][2][0] = Taotromino::Empty;
-    taoDefinition[1][2][1] = Taotromino::Empty;
+    taoDefinition[1][2][1] = Taotromino::T;
     taoDefinition[1][2][2] = Taotromino::Empty;
     taoDefinition[1][2][3] = Taotromino::Empty;
     
@@ -112,14 +112,14 @@ TTaotromino::TTaotromino(int y) {
     
     std::cout << "Generating Sprites" << std::endl;
     
-    auto firstSquare = Sprite::createWithSpriteFrameName("daSquareMidoriBig");
-    firstSquare->setPosition(0,0);
-    auto secondSquare = Sprite::createWithSpriteFrameName("daSquareMidoriBig");
-    secondSquare->setPosition(90,0);
-    auto thirdSquare = Sprite::createWithSpriteFrameName("daSquareMidoriBig");
-    thirdSquare->setPosition(180,0);
-    auto fourthSquare = Sprite::createWithSpriteFrameName("daSquareMidoriBig");
-    fourthSquare->setPosition(270,0);
+    auto firstSquare = Sprite::createWithSpriteFrameName("daSquareMikuBig");
+    firstSquare->setPosition(90,0);
+    auto secondSquare = Sprite::createWithSpriteFrameName("daSquareMikuBig");
+    secondSquare->setPosition(0,-90);
+    auto thirdSquare = Sprite::createWithSpriteFrameName("daSquareMikuBig");
+    thirdSquare->setPosition(90,-90);
+    auto fourthSquare = Sprite::createWithSpriteFrameName("daSquareMikuBig");
+    fourthSquare->setPosition(180,-90);
     
     std::cout << "Adding Sprites to the Taotromino" << std::endl;
     

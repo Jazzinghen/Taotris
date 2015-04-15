@@ -5,8 +5,8 @@
  * Created on 15 April 2015, 16:13
  */
 
-#ifndef LINETAOTROMINO_H
-#define	LINETAOTROMINO_H
+#ifndef TTAOTROMINO_H
+#define	TTAOTROMINO_H
 
 #include "Taotromino.h"
 
@@ -22,5 +22,5 @@ private:
 
 };
 
-#endif	/* LINETAOTROMINO_H */
+#endif	/* TTAOTROMINO_H */
 
