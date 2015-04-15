@@ -6,6 +6,7 @@
  */
 #include <fstream>
 #include <iostream>
+#include <array>
 
 #include "Include/Taotromino.h"
 
@@ -174,10 +175,11 @@ const Taotromino::taotromino_t Taotromino::zDefinition[4][3][3]{
 
 Taotromino::Taotromino(taotromino_t type) {
     
-     std::cout << "Setting Type: " << type << std::endl;
+    std::cout << "Setting Type: " << type << std::endl;
     Taotromino::SetType(type);
+    taoSize = 4;
     
-     std::cout << "Generating Sprites" << std::endl;
+    std::cout << "Generating Sprites" << std::endl;
     
     auto firstSquare = Sprite::createWithSpriteFrameName("daSquareMidoriBig");
     firstSquare->setPosition(0,0);
@@ -188,7 +190,7 @@ Taotromino::Taotromino(taotromino_t type) {
     auto fourthSquare = Sprite::createWithSpriteFrameName("daSquareMidoriBig");
     fourthSquare->setPosition(180,0);
     
-     std::cout << "Adding Sprites to the Taotromino" << std::endl;
+    std::cout << "Adding Sprites to the Taotromino" << std::endl;
     
     this->addChild(firstSquare);
     this->addChild(secondSquare);
