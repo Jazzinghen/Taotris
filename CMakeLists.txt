@@ -119,12 +119,12 @@ set(GAME_SRC
   Classes/GridManager.cpp
   Classes/Taotromino.cpp
   Classes/LineTaotromino.cpp
-#  Classes/SquareTaotromino.cpp
-#  Classes/TTaotromino.cpp
-#  Classes/JTaotromino.cpp
-#  Classes/LTaotromino.cpp
-#  Classes/STaotromino.cpp
-#  Classes/ZTaotromino.cpp
+  Classes/SquareTaotromino.cpp
+  Classes/TTaotromino.cpp
+  Classes/JTaotromino.cpp
+  Classes/LTaotromino.cpp
+  Classes/STaotromino.cpp
+  Classes/ZTaotromino.cpp
   Classes/TaotrominoGrid.cpp
   ${PLATFORM_SPECIFIC_SRC}
 )
@@ -135,12 +135,12 @@ set(GAME_HEADERS
   Classes/Include/GridManager.h
   Classes/Include/Taotromino.h
   Classes/Include/LineTaotromino.h
-#  Classes/Include/SquareTaotromino.h
-#  Classes/Include/TTaotromino.h
-#  Classes/Include/JTaotromino.h
-#  Classes/Include/LTaotromino.h
-#  Classes/Include/STaotromino.h
-#  Classes/Include/ZTaotromino.h
+  Classes/Include/SquareTaotromino.h
+  Classes/Include/TTaotromino.h
+  Classes/Include/JTaotromino.h
+  Classes/Include/LTaotromino.h
+  Classes/Include/STaotromino.h
+  Classes/Include/ZTaotromino.h
   Classes/Include/TaotrominoGrid.h
 ${PLATFORM_SPECIFIC_HEADERS}
 )

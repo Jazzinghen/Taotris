@@ -18,92 +18,47 @@ JTaotromino::JTaotromino(int y) {
      *  fucked up on the Internet and my brain is refusing to work.
      */
     
-    // 0° rotation
-    taoDefinition[0][0][0] = Taotromino::Line;
-    taoDefinition[0][0][1] = Taotromino::Empty;
-    taoDefinition[0][0][2] = Taotromino::Empty;
-    taoDefinition[0][0][3] = Taotromino::Empty;
+    std::array<TaotrominoGrid::taotromino_t, (std::size_t) 4> firstColumn {
+        { TaotrominoGrid::J, TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::Empty }
+    };
     
-    taoDefinition[0][1][0] = Taotromino::Line;
-    taoDefinition[0][1][1] = Taotromino::Empty;
-    taoDefinition[0][1][2] = Taotromino::Empty;
-    taoDefinition[0][1][3] = Taotromino::Empty;
+    std::array<TaotrominoGrid::taotromino_t, (std::size_t) 4> secondColumn {
+        { TaotrominoGrid::J, TaotrominoGrid::J, TaotrominoGrid::J, TaotrominoGrid::Empty }
+    };
     
-    taoDefinition[0][2][0] = Taotromino::Line;
-    taoDefinition[0][2][1] = Taotromino::Empty;
-    taoDefinition[0][2][2] = Taotromino::Empty;
-    taoDefinition[0][2][3] = Taotromino::Empty;
+    std::array<TaotrominoGrid::taotromino_t, (std::size_t) 4> thirdColumn {
+        { TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::Empty }
+    };
     
-    taoDefinition[0][3][0] = Taotromino::Line;
-    taoDefinition[0][3][1] = Taotromino::Empty;
-    taoDefinition[0][3][2] = Taotromino::Empty;
-    taoDefinition[0][3][3] = Taotromino::Empty;
-    
-    // 90° rotation
-    taoDefinition[1][0][0] = Taotromino::Line;
-    taoDefinition[1][0][1] = Taotromino::Line;
-    taoDefinition[1][0][2] = Taotromino::Line;
-    taoDefinition[1][0][3] = Taotromino::Line;
-    
-    taoDefinition[1][1][0] = Taotromino::Empty;
-    taoDefinition[1][1][1] = Taotromino::Empty;
-    taoDefinition[1][1][2] = Taotromino::Empty;
-    taoDefinition[1][1][3] = Taotromino::Empty;
-    
-    taoDefinition[1][2][0] = Taotromino::Empty;
-    taoDefinition[1][2][1] = Taotromino::Empty;
-    taoDefinition[1][2][2] = Taotromino::Empty;
-    taoDefinition[1][2][3] = Taotromino::Empty;
-    
-    taoDefinition[1][3][0] = Taotromino::Empty;
-    taoDefinition[1][3][1] = Taotromino::Empty;
-    taoDefinition[1][3][2] = Taotromino::Empty;
-    taoDefinition[1][3][3] = Taotromino::Empty;
-    
-    // 180° rotation
-    taoDefinition[2][0][0] = Taotromino::Line;
-    taoDefinition[2][0][1] = Taotromino::Empty;
-    taoDefinition[2][0][2] = Taotromino::Empty;
-    taoDefinition[2][0][3] = Taotromino::Empty;
-    
-    taoDefinition[2][1][0] = Taotromino::Line;
-    taoDefinition[2][1][1] = Taotromino::Empty;
-    taoDefinition[2][1][2] = Taotromino::Empty;
-    taoDefinition[2][1][3] = Taotromino::Empty;
-    
-    taoDefinition[2][2][0] = Taotromino::Line;
-    taoDefinition[2][2][1] = Taotromino::Empty;
-    taoDefinition[2][2][2] = Taotromino::Empty;
-    taoDefinition[2][2][3] = Taotromino::Empty;
-    
-    taoDefinition[2][3][0] = Taotromino::Line;
-    taoDefinition[2][3][1] = Taotromino::Empty;
-    taoDefinition[2][3][2] = Taotromino::Empty;
-    taoDefinition[2][3][3] = Taotromino::Empty;
-    
-    // 270° rotation
-    taoDefinition[1][0][0] = Taotromino::Line;
-    taoDefinition[1][0][1] = Taotromino::Line;
-    taoDefinition[1][0][2] = Taotromino::Line;
-    taoDefinition[1][0][3] = Taotromino::Line;
-    
-    taoDefinition[1][1][0] = Taotromino::Empty;
-    taoDefinition[1][1][1] = Taotromino::Empty;
-    taoDefinition[1][1][2] = Taotromino::Empty;
-    taoDefinition[1][1][3] = Taotromino::Empty;
-    
-    taoDefinition[1][2][0] = Taotromino::Empty;
-    taoDefinition[1][2][1] = Taotromino::Empty;
-    taoDefinition[1][2][2] = Taotromino::Empty;
-    taoDefinition[1][2][3] = Taotromino::Empty;
-    
-    taoDefinition[1][3][0] = Taotromino::Empty;
-    taoDefinition[1][3][1] = Taotromino::Empty;
-    taoDefinition[1][3][2] = Taotromino::Empty;
-    taoDefinition[1][3][3] = Taotromino::Empty;
+    std::array<TaotrominoGrid::taotromino_t, (std::size_t) 4> fourthColumn {
+        { TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::Empty }
+    };
     
     
-    taoSize = 4;
+    // 0 is 0°, 1 is 90°, 2 is 180° and 3 is 270°
+    // I am doing all this stuff in order to write as less as possible ;3;
+    
+    taoDefinition[0] = { firstColumn, secondColumn, thirdColumn, fourthColumn };
+    
+    firstColumn = { TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::J, TaotrominoGrid::Empty };
+    
+    taoDefinition[2] = { secondColumn, firstColumn, thirdColumn, fourthColumn };
+    
+    firstColumn = { TaotrominoGrid::J, TaotrominoGrid::J, TaotrominoGrid::Empty, TaotrominoGrid::Empty };
+    secondColumn = { TaotrominoGrid::J, TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::Empty };
+    thirdColumn = { TaotrominoGrid::J, TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::Empty };
+    fourthColumn = { TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::Empty };
+    
+    taoDefinition[1] = { firstColumn, secondColumn, thirdColumn, fourthColumn };
+
+    firstColumn = { TaotrominoGrid::Empty, TaotrominoGrid::J, TaotrominoGrid::Empty, TaotrominoGrid::Empty };
+    secondColumn = { TaotrominoGrid::Empty, TaotrominoGrid::J, TaotrominoGrid::Empty, TaotrominoGrid::Empty };
+    thirdColumn = { TaotrominoGrid::J, TaotrominoGrid::J, TaotrominoGrid::Empty, TaotrominoGrid::Empty };
+    fourthColumn = { TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::Empty };
+    
+    taoDefinition[3] = { firstColumn, secondColumn, thirdColumn, fourthColumn };
+    
+    taoSize = 3;
     taoCentre[0] = 0;
     taoCentre[1] = 0;
     taoLocation[0] = 16;
@@ -112,14 +67,14 @@ JTaotromino::JTaotromino(int y) {
     
     std::cout << "Generating Sprites" << std::endl;
     
-    auto firstSquare = Sprite::createWithSpriteFrameName("daSquareMidoriBig");
+    auto firstSquare = Sprite::createWithSpriteFrameName("daSquareAkaBig");
     firstSquare->setPosition(0,0);
-    auto secondSquare = Sprite::createWithSpriteFrameName("daSquareMidoriBig");
-    secondSquare->setPosition(90,0);
-    auto thirdSquare = Sprite::createWithSpriteFrameName("daSquareMidoriBig");
-    thirdSquare->setPosition(180,0);
-    auto fourthSquare = Sprite::createWithSpriteFrameName("daSquareMidoriBig");
-    fourthSquare->setPosition(270,0);
+    auto secondSquare = Sprite::createWithSpriteFrameName("daSquareAkaBig");
+    secondSquare->setPosition(-90,0);
+    auto thirdSquare = Sprite::createWithSpriteFrameName("daSquareAkaBig");
+    thirdSquare->setPosition(-90,-90);
+    auto fourthSquare = Sprite::createWithSpriteFrameName("daSquareAkaBig");
+    fourthSquare->setPosition(-90,-180);
     
     std::cout << "Adding Sprites to the Taotromino" << std::endl;
     

@@ -13,12 +13,12 @@
 #include "Include/Taotromino.h"
 #include "Include/TaotrominoGrid.h"
 #include "Include/LineTaotromino.h"
-//#include "Include/SquareTaotromino.h"
-//#include "Include/TTaotromino.h"
-//#include "Include/JTaotromino.h"
-//#include "Include/LTaotromino.h"
-//#include "Include/STaotromino.h"
-//#include "Include/ZTaotromino.h"
+#include "Include/SquareTaotromino.h"
+#include "Include/TTaotromino.h"
+#include "Include/JTaotromino.h"
+#include "Include/LTaotromino.h"
+#include "Include/STaotromino.h"
+#include "Include/ZTaotromino.h"
 
 USING_NS_CC;
 
@@ -33,10 +33,17 @@ GridManager::GridManager() {
     currentTao = new LineTaotromino(5);
      std::cout << "Setting Location" << std::endl;
     currentTao->setPosition((90 + 90*16) - 45, (90 + 90*5) - 45);
-    currentTao->setRotation(90.0);
+    
+    auto fuffa1 = new LTaotromino(4);
+    fuffa1->setPosition((90 + 90*4) - 45, (90 + 90*7) - 45);
+    
+    auto fuffa2 = new ZTaotromino(4);
+    fuffa2->setPosition((90 + 90*10) - 45, (90 + 90*10) - 45);
     
      std::cout << "Adding Taotromino to scene" << std::endl;
     this->addChild(currentTao, 2);
+    this->addChild(fuffa1, 2);
+    this->addChild(fuffa2, 2);
      std::cout << "End" << std::endl;
     
 }
