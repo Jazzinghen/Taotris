@@ -13,21 +13,31 @@
 
 class TaotrominoGrid {
 public:
-    TaotrominoGrid(std::array<Taotromino::taotromino_t, (std::size_t) 4> first,
-                   std::array<Taotromino::taotromino_t, (std::size_t) 4> second,
-                   std::array<Taotromino::taotromino_t, (std::size_t) 4> third,
-                   std::array<Taotromino::taotromino_t, (std::size_t) 4> fourth);
+    typedef enum {
+        Empty, Square, Line, T, S, Z, J, L
+    } taotromino_t;
     
-    TaotrominoGrid(const TaotrominoGrid& orig);
+    TaotrominoGrid(std::array<taotromino_t, (std::size_t) 4> first,
+                   std::array<taotromino_t, (std::size_t) 4> second,
+                   std::array<taotromino_t, (std::size_t) 4> third,
+                   std::array<taotromino_t, (std::size_t) 4> fourth);
+    
+    TaotrominoGrid();
+    
+    TaotrominoGrid(const TaotrominoGrid& orig) {
+        for (int i = 0; i < 4; i++) {
+            this->gridDefinition[i] = orig.gridDefinition[i];
+        }
+    };
     virtual ~TaotrominoGrid();
     
-    std::array<Taotromino::taotromino_t, (std::size_t) 4> getColum(int x) {
+    std::array<taotromino_t, (std::size_t) 4> getColum(int x) {
         return gridDefinition[x];
     };
     
 private:
     // gridDefinition are defined by columns, starting from the top (i.e. 0 is the first column to the right)
-    std::array<std::array<Taotromino::taotromino_t, (std::size_t) 4>, (std::size_t) 4> gridDefinition;
+    std::array<std::array<taotromino_t, (std::size_t) 4>, (std::size_t) 4> gridDefinition;
 
 };
 

@@ -11,13 +11,14 @@
 
 #include "Include/GridManager.h"
 #include "Include/Taotromino.h"
+#include "Include/TaotrominoGrid.h"
 #include "Include/LineTaotromino.h"
-#include "Include/SquareTaotromino.h"
-#include "Include/TTaotromino.h"
-#include "Include/JTaotromino.h"
-#include "Include/LTaotromino.h"
-#include "Include/STaotromino.h"
-#include "Include/ZTaotromino.h"
+//#include "Include/SquareTaotromino.h"
+//#include "Include/TTaotromino.h"
+//#include "Include/JTaotromino.h"
+//#include "Include/LTaotromino.h"
+//#include "Include/STaotromino.h"
+//#include "Include/ZTaotromino.h"
 
 USING_NS_CC;
 
@@ -29,7 +30,7 @@ GridManager::GridManager() {
     this->addChild(mainGrid);
     
      std::cout << "Creating Taotromino" << std::endl;
-    currentTao = new TTaotromino(5);
+    currentTao = new LineTaotromino(5);
      std::cout << "Setting Location" << std::endl;
     currentTao->setPosition((90 + 90*16) - 45, (90 + 90*5) - 45);
     currentTao->setRotation(90.0);
@@ -46,28 +47,28 @@ GridManager::GridManager(const GridManager& orig) {
 GridManager::~GridManager() {
 }
 
-std::string GridManager::BlockName(Taotromino::taotromino_t blockType){
+std::string GridManager::BlockName(TaotrominoGrid::taotromino_t blockType){
     
     switch (blockType){
-        case Taotromino::Line:
+        case TaotrominoGrid::Line:
             return "daSquareMidoriBig";
             break;
-        case Taotromino::Square:
+        case TaotrominoGrid::Square:
             return "daSquareMomoBig";
             break;
-        case Taotromino::T:
+        case TaotrominoGrid::T:
             return "daSquareMikuBig";
             break;
-        case Taotromino::J:
+        case TaotrominoGrid::J:
             return "daSquareAkaBig";
             break;
-        case Taotromino::L:
+        case TaotrominoGrid::L:
             return "daSquareShiroBig";
             break;
-        case Taotromino::S:
+        case TaotrominoGrid::S:
             return "daSquareOnii";
             break;
-        case Taotromino::Z:
+        case TaotrominoGrid::Z:
             return "daSquareOnee";
             break;
         default:
