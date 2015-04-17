@@ -3,6 +3,7 @@
 
 #include "cocos2d.h"
 #include "Taotromino.h"
+#include "GridManager.h"
 
 class HelloWorld : public cocos2d::Layer
 {
@@ -20,6 +21,12 @@ public:
     CREATE_FUNC(HelloWorld);
     
     void update(float delta) override;
+
+private:
+    
+    GridManager* taoManager;
+    float timeSinceStart;
+
 };
 
 #endif // __HELLOWORLD_SCENE_H__

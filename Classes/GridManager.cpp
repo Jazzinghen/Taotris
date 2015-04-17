@@ -83,3 +83,9 @@ std::string GridManager::BlockName(TaotrominoGrid::taotromino_t blockType){
             break;
     }
 }
+
+void GridManager::TaoStep() {
+    auto taoMove = MoveBy::create(0.5f, Vec2(-90, 0));
+    auto taoSeq = Sequence::create(taoMove, nullptr);
+    currentTao->runAction(taoSeq);
+}

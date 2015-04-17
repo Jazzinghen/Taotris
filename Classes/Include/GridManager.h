@@ -26,6 +26,8 @@ public:
     
     std::string BlockName (TaotrominoGrid::taotromino_t blockType);
     
+    void TaoStep ();
+    
 private:
     std::array<std::array<int,(std::size_t) 10>,(std::size_t) 16> frontGrid;
     std::array<std::array<int,(std::size_t) 10>,(std::size_t) 16> backGrid;

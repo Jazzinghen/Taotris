@@ -35,7 +35,7 @@ bool HelloWorld::init()
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     
-    auto grids = new GridManager();
+    taoManager = new GridManager();
     
     // Using an empty node to maintain all of the game sprites
     auto spriteNode = Node::create();
@@ -55,18 +55,27 @@ bool HelloWorld::init()
     
     // Adding spriteNode
     this->addChild(spriteNode,-1);
-    this->addChild(grids, -9);
+    this->addChild(taoManager, -9);
     this->addChild(background, -10);
     
     // Adding Squares to the spriteNode
     spriteNode->addChild(daSquareBro,0);
     spriteNode->addChild(daSquareSis,0);
-         
+    
+    // Needed to update the scene otherwise... It won't run it?
+    this->scheduleUpdate();
+    
     return true;
 }
 
 void HelloWorld::update(float delta){
+    timeSinceStart += delta;
     
+    if (timeSinceStart >= 2.0f){
+        std::cout << "Now executing step!" << std::endl;
+        taoManager->TaoStep();
+        timeSinceStart = 0.0f;
+    }
 }
 
 
