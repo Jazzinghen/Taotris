@@ -9,200 +9,152 @@
 #include <array>
 
 #include "Include/Taotromino.h"
+#include "Include/TaotrominoGrid.h"
 
 USING_NS_CC;
 
-const Taotromino::taotromino_t lineDefinition[4][4][4] = {
+
+
+const TaotrominoGrid::taotromino_t Taotromino::squareDefinition[4][2][2] = {
     {
-        {Taotromino::Line, Taotromino::Empty, Taotromino::Empty, Taotromino::Empty},
-        {Taotromino::Line, Taotromino::Empty, Taotromino::Empty, Taotromino::Empty},
-        {Taotromino::Line, Taotromino::Empty, Taotromino::Empty, Taotromino::Empty},
-        {Taotromino::Line, Taotromino::Empty, Taotromino::Empty, Taotromino::Empty}
+        {TaotrominoGrid::Square, TaotrominoGrid::Square},
+        {TaotrominoGrid::Square, TaotrominoGrid::Square}               
     },
     {
-        {Taotromino::Line, Taotromino::Line, Taotromino::Line, Taotromino::Line},
-        {Taotromino::Empty, Taotromino::Empty, Taotromino::Empty, Taotromino::Empty},
-        {Taotromino::Empty, Taotromino::Empty, Taotromino::Empty, Taotromino::Empty},
-        {Taotromino::Empty, Taotromino::Empty, Taotromino::Empty, Taotromino::Empty}
+        {TaotrominoGrid::Square, TaotrominoGrid::Square},
+        {TaotrominoGrid::Square, TaotrominoGrid::Square}               
     },
     {
-        {Taotromino::Line, Taotromino::Empty, Taotromino::Empty, Taotromino::Empty},
-        {Taotromino::Line, Taotromino::Empty, Taotromino::Empty, Taotromino::Empty},
-        {Taotromino::Line, Taotromino::Empty, Taotromino::Empty, Taotromino::Empty},
-        {Taotromino::Line, Taotromino::Empty, Taotromino::Empty, Taotromino::Empty}
+        {TaotrominoGrid::Square, TaotrominoGrid::Square},
+        {TaotrominoGrid::Square, TaotrominoGrid::Square}               
     },
     {
-        {Taotromino::Line, Taotromino::Line, Taotromino::Line, Taotromino::Line},
-        {Taotromino::Empty, Taotromino::Empty, Taotromino::Empty, Taotromino::Empty},
-        {Taotromino::Empty, Taotromino::Empty, Taotromino::Empty, Taotromino::Empty},
-        {Taotromino::Empty, Taotromino::Empty, Taotromino::Empty, Taotromino::Empty}
+        {TaotrominoGrid::Square, TaotrominoGrid::Square},
+        {TaotrominoGrid::Square, TaotrominoGrid::Square}               
     }
 };
 
-const Taotromino::taotromino_t Taotromino::squareDefinition[4][2][2] = {
+const TaotrominoGrid::taotromino_t Taotromino::tDefinition[4][3][3]{
     {
-        {Taotromino::Square, Taotromino::Square},
-        {Taotromino::Square, Taotromino::Square}               
+        {TaotrominoGrid::Empty, TaotrominoGrid::T, TaotrominoGrid::Empty},
+        {TaotrominoGrid::T, TaotrominoGrid::T, TaotrominoGrid::T},
+        {TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::Empty}
     },
     {
-        {Taotromino::Square, Taotromino::Square},
-        {Taotromino::Square, Taotromino::Square}               
+        {TaotrominoGrid::Empty, TaotrominoGrid::T, TaotrominoGrid::Empty},
+        {TaotrominoGrid::Empty, TaotrominoGrid::T, TaotrominoGrid::T},
+        {TaotrominoGrid::Empty, TaotrominoGrid::T, TaotrominoGrid::Empty}
     },
     {
-        {Taotromino::Square, Taotromino::Square},
-        {Taotromino::Square, Taotromino::Square}               
-    },
-    {
-        {Taotromino::Square, Taotromino::Square},
-        {Taotromino::Square, Taotromino::Square}               
-    }
-};
-
-const Taotromino::taotromino_t Taotromino::tDefinition[4][3][3]{
-    {
-        {Taotromino::Empty, Taotromino::T, Taotromino::Empty},
-        {Taotromino::T, Taotromino::T, Taotromino::T},
-        {Taotromino::Empty, Taotromino::Empty, Taotromino::Empty}
-    },
-    {
-        {Taotromino::Empty, Taotromino::T, Taotromino::Empty},
-        {Taotromino::Empty, Taotromino::T, Taotromino::T},
-        {Taotromino::Empty, Taotromino::T, Taotromino::Empty}
-    },
-    {
-        {Taotromino::Empty, Taotromino::Empty, Taotromino::Empty},
-        {Taotromino::T, Taotromino::T, Taotromino::T},
-        {Taotromino::Empty, Taotromino::T, Taotromino::Empty}
+        {TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::Empty},
+        {TaotrominoGrid::T, TaotrominoGrid::T, TaotrominoGrid::T},
+        {TaotrominoGrid::Empty, TaotrominoGrid::T, TaotrominoGrid::Empty}
     },
      {
-        {Taotromino::Empty, Taotromino::T, Taotromino::Empty},
-        {Taotromino::T, Taotromino::T, Taotromino::Empty},
-        {Taotromino::Empty, Taotromino::T, Taotromino::Empty}
+        {TaotrominoGrid::Empty, TaotrominoGrid::T, TaotrominoGrid::Empty},
+        {TaotrominoGrid::T, TaotrominoGrid::T, TaotrominoGrid::Empty},
+        {TaotrominoGrid::Empty, TaotrominoGrid::T, TaotrominoGrid::Empty}
     }
 };
 
-const Taotromino::taotromino_t Taotromino::jDefinition[4][3][3]{
+const TaotrominoGrid::taotromino_t Taotromino::jDefinition[4][3][3]{
     {
-        {Taotromino::Empty, Taotromino::J, Taotromino::Empty},
-        {Taotromino::Empty, Taotromino::J, Taotromino::Empty},
-        {Taotromino::J, Taotromino::J, Taotromino::Empty}
+        {TaotrominoGrid::Empty, TaotrominoGrid::J, TaotrominoGrid::Empty},
+        {TaotrominoGrid::Empty, TaotrominoGrid::J, TaotrominoGrid::Empty},
+        {TaotrominoGrid::J, TaotrominoGrid::J, TaotrominoGrid::Empty}
     },
     {
-        {Taotromino::J, Taotromino::Empty, Taotromino::Empty},
-        {Taotromino::J, Taotromino::J, Taotromino::J},
-        {Taotromino::Empty, Taotromino::Empty, Taotromino::Empty}
+        {TaotrominoGrid::J, TaotrominoGrid::Empty, TaotrominoGrid::Empty},
+        {TaotrominoGrid::J, TaotrominoGrid::J, TaotrominoGrid::J},
+        {TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::Empty}
     },
     {
-        {Taotromino::Empty, Taotromino::J, Taotromino::J},
-        {Taotromino::Empty, Taotromino::J, Taotromino::Empty},
-        {Taotromino::Empty, Taotromino::J, Taotromino::Empty}
+        {TaotrominoGrid::Empty, TaotrominoGrid::J, TaotrominoGrid::J},
+        {TaotrominoGrid::Empty, TaotrominoGrid::J, TaotrominoGrid::Empty},
+        {TaotrominoGrid::Empty, TaotrominoGrid::J, TaotrominoGrid::Empty}
     },
      {
-        {Taotromino::Empty, Taotromino::Empty, Taotromino::Empty},
-        {Taotromino::J, Taotromino::J, Taotromino::J},
-        {Taotromino::Empty, Taotromino::Empty, Taotromino::J}
+        {TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::Empty},
+        {TaotrominoGrid::J, TaotrominoGrid::J, TaotrominoGrid::J},
+        {TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::J}
     }
 };
 
-const Taotromino::taotromino_t Taotromino::lDefinition[4][3][3]{
+const TaotrominoGrid::taotromino_t Taotromino::lDefinition[4][3][3]{
     {
-        {Taotromino::Empty, Taotromino::L, Taotromino::Empty},
-        {Taotromino::Empty, Taotromino::L, Taotromino::Empty},
-        {Taotromino::Empty, Taotromino::L, Taotromino::L}
+        {TaotrominoGrid::Empty, TaotrominoGrid::L, TaotrominoGrid::Empty},
+        {TaotrominoGrid::Empty, TaotrominoGrid::L, TaotrominoGrid::Empty},
+        {TaotrominoGrid::Empty, TaotrominoGrid::L, TaotrominoGrid::L}
     },
     {
-        {Taotromino::Empty, Taotromino::Empty, Taotromino::Empty},
-        {Taotromino::L, Taotromino::L, Taotromino::L},
-        {Taotromino::L, Taotromino::Empty, Taotromino::Empty}
+        {TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::Empty},
+        {TaotrominoGrid::L, TaotrominoGrid::L, TaotrominoGrid::L},
+        {TaotrominoGrid::L, TaotrominoGrid::Empty, TaotrominoGrid::Empty}
     },
     {
-        {Taotromino::L, Taotromino::L, Taotromino::Empty},
-        {Taotromino::Empty, Taotromino::L, Taotromino::Empty},
-        {Taotromino::Empty, Taotromino::L, Taotromino::Empty}
+        {TaotrominoGrid::L, TaotrominoGrid::L, TaotrominoGrid::Empty},
+        {TaotrominoGrid::Empty, TaotrominoGrid::L, TaotrominoGrid::Empty},
+        {TaotrominoGrid::Empty, TaotrominoGrid::L, TaotrominoGrid::Empty}
     },
      {
-        {Taotromino::Empty, Taotromino::Empty, Taotromino::L},
-        {Taotromino::L, Taotromino::L, Taotromino::L},
-        {Taotromino::Empty, Taotromino::Empty, Taotromino::Empty}
+        {TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::L},
+        {TaotrominoGrid::L, TaotrominoGrid::L, TaotrominoGrid::L},
+        {TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::Empty}
     }
 };
 
-const Taotromino::taotromino_t Taotromino::sDefinition[4][3][3]{
+const TaotrominoGrid::taotromino_t Taotromino::sDefinition[4][3][3]{
     {
-        {Taotromino::Empty, Taotromino::S, Taotromino::S},
-        {Taotromino::S, Taotromino::S, Taotromino::Empty},
-        {Taotromino::Empty, Taotromino::Empty, Taotromino::Empty}
+        {TaotrominoGrid::Empty, TaotrominoGrid::S, TaotrominoGrid::S},
+        {TaotrominoGrid::S, TaotrominoGrid::S, TaotrominoGrid::Empty},
+        {TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::Empty}
     },
     {
-        {Taotromino::Empty, Taotromino::S, Taotromino::Empty},
-        {Taotromino::Empty, Taotromino::S, Taotromino::S},
-        {Taotromino::Empty, Taotromino::Empty, Taotromino::S}
+        {TaotrominoGrid::Empty, TaotrominoGrid::S, TaotrominoGrid::Empty},
+        {TaotrominoGrid::Empty, TaotrominoGrid::S, TaotrominoGrid::S},
+        {TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::S}
     },
     {
-        {Taotromino::Empty, Taotromino::S, Taotromino::S},
-        {Taotromino::S, Taotromino::S, Taotromino::Empty},
-        {Taotromino::Empty, Taotromino::Empty, Taotromino::Empty}
+        {TaotrominoGrid::Empty, TaotrominoGrid::S, TaotrominoGrid::S},
+        {TaotrominoGrid::S, TaotrominoGrid::S, TaotrominoGrid::Empty},
+        {TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::Empty}
     },
     {
-        {Taotromino::Empty, Taotromino::S, Taotromino::Empty},
-        {Taotromino::Empty, Taotromino::S, Taotromino::S},
-        {Taotromino::Empty, Taotromino::Empty, Taotromino::S}
+        {TaotrominoGrid::Empty, TaotrominoGrid::S, TaotrominoGrid::Empty},
+        {TaotrominoGrid::Empty, TaotrominoGrid::S, TaotrominoGrid::S},
+        {TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::S}
     }
 };
 
-const Taotromino::taotromino_t Taotromino::zDefinition[4][3][3]{
+const TaotrominoGrid::taotromino_t Taotromino::zDefinition[4][3][3]{
     {
-        {Taotromino::Z, Taotromino::Z, Taotromino::Empty},
-        {Taotromino::Empty, Taotromino::Z, Taotromino::Z},
-        {Taotromino::Empty, Taotromino::Empty, Taotromino::Empty}
+        {TaotrominoGrid::Z, TaotrominoGrid::Z, TaotrominoGrid::Empty},
+        {TaotrominoGrid::Empty, TaotrominoGrid::Z, TaotrominoGrid::Z},
+        {TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::Empty}
     },
     {
-        {Taotromino::Empty, Taotromino::Empty, Taotromino::Z},
-        {Taotromino::Empty, Taotromino::Z, Taotromino::Z},
-        {Taotromino::Empty, Taotromino::Z, Taotromino::Empty}
+        {TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::Z},
+        {TaotrominoGrid::Empty, TaotrominoGrid::Z, TaotrominoGrid::Z},
+        {TaotrominoGrid::Empty, TaotrominoGrid::Z, TaotrominoGrid::Empty}
     },
     {
-        {Taotromino::Z, Taotromino::Z, Taotromino::Empty},
-        {Taotromino::Empty, Taotromino::Z, Taotromino::Z},
-        {Taotromino::Empty, Taotromino::Empty, Taotromino::Empty}
+        {TaotrominoGrid::Z, TaotrominoGrid::Z, TaotrominoGrid::Empty},
+        {TaotrominoGrid::Empty, TaotrominoGrid::Z, TaotrominoGrid::Z},
+        {TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::Empty}
     },
     {
-        {Taotromino::Empty, Taotromino::Empty, Taotromino::Z},
-        {Taotromino::Empty, Taotromino::Z, Taotromino::Z},
-        {Taotromino::Empty, Taotromino::Z, Taotromino::Empty}
+        {TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::Z},
+        {TaotrominoGrid::Empty, TaotrominoGrid::Z, TaotrominoGrid::Z},
+        {TaotrominoGrid::Empty, TaotrominoGrid::Z, TaotrominoGrid::Empty}
     }
 };
 
-Taotromino::Taotromino(taotromino_t type) {
-    
-    std::cout << "Setting Type: " << type << std::endl;
-    Taotromino::SetType(type);
-    taoSize = 4;
-    
-    std::cout << "Generating Sprites" << std::endl;
-    
-    auto firstSquare = Sprite::createWithSpriteFrameName("daSquareMidoriBig");
-    firstSquare->setPosition(0,0);
-    auto secondSquare = Sprite::createWithSpriteFrameName("daSquareMidoriBig");
-    secondSquare->setPosition(-90,0);
-    auto thirdSquare = Sprite::createWithSpriteFrameName("daSquareMidoriBig");
-    thirdSquare->setPosition(90,0);
-    auto fourthSquare = Sprite::createWithSpriteFrameName("daSquareMidoriBig");
-    fourthSquare->setPosition(180,0);
-    
-    std::cout << "Adding Sprites to the Taotromino" << std::endl;
-    
-    this->addChild(firstSquare);
-    this->addChild(secondSquare);
-    this->addChild(thirdSquare);
-    this->addChild(fourthSquare);
-}
-
-
-
-Taotromino::Taotromino(const Taotromino& orig) {
+Taotromino::Taotromino() {
 }
 
 Taotromino::~Taotromino() {
 }
 
+void Taotromino::rotate(){
+    rotation = (rotation + 1) % 4;
+}

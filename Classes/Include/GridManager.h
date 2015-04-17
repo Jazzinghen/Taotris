@@ -13,6 +13,7 @@
 
 #include "cocos2d.h"
 #include "Taotromino.h"
+#include "TaotrominoGrid.h"
 
 class GridManager : public cocos2d::Node{
 public:
@@ -23,7 +24,7 @@ public:
     void grawGrid (Node);
     void updateGrid ();
     
-    std::string BlockName (Taotromino::taotromino_t blockType);
+    std::string BlockName (TaotrominoGrid::taotromino_t blockType);
     
 private:
     std::array<std::array<int,(std::size_t) 10>,(std::size_t) 16> frontGrid;

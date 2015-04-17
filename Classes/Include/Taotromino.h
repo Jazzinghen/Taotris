@@ -10,31 +10,30 @@
 #define	TAOTROMINO_H
 
 #include "cocos2d.h"
+#include <iostream>
+#include <fstream>
+#include <array>
 
-class Taotromino : public cocos2d::Node{
-public:    
-    typedef enum {
-        Empty, Square, Line, T, S, Z, J, L
-    } taotromino_t;
+#include "TaotrominoGrid.h"
 
-    Taotromino(taotromino_t type);
-    Taotromino(const Taotromino& orig);
+class Taotromino : public cocos2d::Node{    
+public:
+    Taotromino();
+    
     virtual ~Taotromino();
+    
+    void rotate();
 
-    void SetType(taotromino_t type) {
+    void SetType(TaotrominoGrid::taotromino_t type) {
         this->type = type;
     }
 
-    taotromino_t GetType() const {
+    TaotrominoGrid::taotromino_t GetType() const {
         return type;
     }
     
-    void TaoStep () {
-        taoLocation[0]++;
-    };
-    
-private:
-    taotromino_t type;
+protected:
+    TaotrominoGrid::taotromino_t type;
     // taoSize is needed to access the mathematical representation of the tetramino
     int taoSize;
     // taoCentre = [x, y] in pixels for rotation
@@ -42,14 +41,15 @@ private:
     // taoLocation = [x, y] in col, rows
     int taoLocation[2];
     int rotation = 0;
+    std::array<TaotrominoGrid, (std::size_t) 4> taoDefinition;
 
-    static const Taotromino::taotromino_t lineDefinition[4][4][4];
-    static const Taotromino::taotromino_t squareDefinition[4][2][2];
-    static const Taotromino::taotromino_t tDefinition[4][3][3];
-    static const Taotromino::taotromino_t lDefinition[4][3][3];
-    static const Taotromino::taotromino_t jDefinition[4][3][3];
-    static const Taotromino::taotromino_t sDefinition[4][3][3];
-    static const Taotromino::taotromino_t zDefinition[4][3][3];
+    static const TaotrominoGrid::taotromino_t lineDefinition[4][4][4];
+    static const TaotrominoGrid::taotromino_t squareDefinition[4][2][2];
+    static const TaotrominoGrid::taotromino_t tDefinition[4][3][3];
+    static const TaotrominoGrid::taotromino_t lDefinition[4][3][3];
+    static const TaotrominoGrid::taotromino_t jDefinition[4][3][3];
+    static const TaotrominoGrid::taotromino_t sDefinition[4][3][3];
+    static const TaotrominoGrid::taotromino_t zDefinition[4][3][3];
 };
 
 #endif	/* TAOTROMINO_H */
