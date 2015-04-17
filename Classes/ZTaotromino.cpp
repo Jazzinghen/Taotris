@@ -56,26 +56,25 @@ ZTaotromino::ZTaotromino(int y) {
     
     std::cout << "Generating Sprites" << std::endl;
     
-    std::cout << "Generating First" << std::endl;
-    auto firstSquare = Sprite::createWithSpriteFrameName("daSquareOnee");
-    std::cout << "Setting First Rotation" << std::endl;
-    firstSquare->setPosition(0,0);
-    std::cout << "Generating Second" << std::endl;
-    auto secondSquare = Sprite::createWithSpriteFrameName("daSquareOnee");
-    secondSquare->setPosition(0,-90);
-    std::cout << "Generating Third" << std::endl;
-    auto thirdSquare = Sprite::createWithSpriteFrameName("daSquareOnee");
-    thirdSquare->setPosition(-90,-90);
-    std::cout << "Generating Fourth" << std::endl;
-    auto fourthSquare = Sprite::createWithSpriteFrameName("daSquareOnee");
-    fourthSquare->setPosition(-90,-180);
+    auto tmpSquare = Sprite::createWithSpriteFrameName("daSquareOnee");
+    tmpSquare->setPosition(0,0);
+    taoBlocks.push_back(tmpSquare);
+    
+    tmpSquare = Sprite::createWithSpriteFrameName("daSquareOnee");
+    tmpSquare->setPosition(0,-90);
+    taoBlocks.push_back(tmpSquare);
+    
+    tmpSquare = Sprite::createWithSpriteFrameName("daSquareOnee");
+    tmpSquare->setPosition(-90,-90);
+    taoBlocks.push_back(tmpSquare);
+
+    tmpSquare = Sprite::createWithSpriteFrameName("daSquareOnee");
+    tmpSquare->setPosition(-90,-180);
+    taoBlocks.push_back(tmpSquare);
     
     std::cout << "Adding Sprites to the Taotromino" << std::endl;
     
-    this->addChild(firstSquare);
-    this->addChild(secondSquare);
-    this->addChild(thirdSquare);
-    this->addChild(fourthSquare);
+    AddToNode();
 };
 
 ZTaotromino::ZTaotromino(const ZTaotromino& orig) {

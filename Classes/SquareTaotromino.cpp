@@ -55,21 +55,25 @@ SquareTaotromino::SquareTaotromino(int y) {
     
     std::cout << "Generating Sprites" << std::endl;
     
-    auto firstSquare = Sprite::createWithSpriteFrameName("daSquareMomoBig");
-    firstSquare->setPosition(0,0);
-    auto secondSquare = Sprite::createWithSpriteFrameName("daSquareMomoBig");
-    secondSquare->setPosition(-90,0);
-    auto thirdSquare = Sprite::createWithSpriteFrameName("daSquareMomoBig");
-    thirdSquare->setPosition(0,-90);
-    auto fourthSquare = Sprite::createWithSpriteFrameName("daSquareMomoBig");
-    fourthSquare->setPosition(-90,-90);
+    auto tmpSquare = Sprite::createWithSpriteFrameName("daSquareMomoBig");
+    tmpSquare->setPosition(0,0);
+    taoBlocks.push_back(tmpSquare);
+    
+    tmpSquare = Sprite::createWithSpriteFrameName("daSquareMomoBig");
+    tmpSquare->setPosition(-90,0);
+    taoBlocks.push_back(tmpSquare);
+    
+    tmpSquare = Sprite::createWithSpriteFrameName("daSquareMomoBig");
+    tmpSquare->setPosition(0,-90);
+    taoBlocks.push_back(tmpSquare);
+    
+    tmpSquare = Sprite::createWithSpriteFrameName("daSquareMomoBig");
+    tmpSquare->setPosition(-90,-90);
+    taoBlocks.push_back(tmpSquare);
     
     std::cout << "Adding Sprites to the Taotromino" << std::endl;
     
-    this->addChild(firstSquare);
-    this->addChild(secondSquare);
-    this->addChild(thirdSquare);
-    this->addChild(fourthSquare);
+    AddToNode();
 };
 
 SquareTaotromino::SquareTaotromino(const SquareTaotromino& orig) {

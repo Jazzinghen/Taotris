@@ -19,6 +19,12 @@ Taotromino::Taotromino() {
 Taotromino::~Taotromino() {
 }
 
-void Taotromino::rotate(){
+void Taotromino::Rotate(){
     rotation = (rotation + 1) % 4;
+}
+
+void Taotromino::AddToNode() {
+    for (auto block : taoBlocks){
+        this->addChild(block);
+    }
 }

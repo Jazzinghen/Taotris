@@ -22,7 +22,7 @@ public:
     
     virtual ~Taotromino();
     
-    void rotate();
+    void Rotate();
 
     void SetType(TaotrominoGrid::taotromino_t type) {
         this->type = type;
@@ -42,6 +42,9 @@ protected:
     int taoLocation[2];
     int rotation = 0;
     std::array<TaotrominoGrid, (std::size_t) 4> taoDefinition;
+    std::vector<cocos2d::Sprite*> taoBlocks;
+    
+    void AddToNode();
 };
 
 #endif	/* TAOTROMINO_H */
