@@ -42,14 +42,6 @@ protected:
     int taoLocation[2];
     int rotation = 0;
     std::array<TaotrominoGrid, (std::size_t) 4> taoDefinition;
-
-    static const TaotrominoGrid::taotromino_t lineDefinition[4][4][4];
-    static const TaotrominoGrid::taotromino_t squareDefinition[4][2][2];
-    static const TaotrominoGrid::taotromino_t tDefinition[4][3][3];
-    static const TaotrominoGrid::taotromino_t lDefinition[4][3][3];
-    static const TaotrominoGrid::taotromino_t jDefinition[4][3][3];
-    static const TaotrominoGrid::taotromino_t sDefinition[4][3][3];
-    static const TaotrominoGrid::taotromino_t zDefinition[4][3][3];
 };
 
 #endif	/* TAOTROMINO_H */
