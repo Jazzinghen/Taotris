@@ -45,7 +45,7 @@ ZTaotromino::ZTaotromino(int y) {
     fourthColumn = { TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::Empty };
     
     taoDefinition[1] = { firstColumn, secondColumn, thirdColumn, fourthColumn };    
-    taoDefinition[4] = taoDefinition[1];
+    taoDefinition[3] = taoDefinition[1];
     
     taoSize = 3;
     taoCentre[0] = 0;

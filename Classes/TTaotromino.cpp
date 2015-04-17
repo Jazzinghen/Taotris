@@ -60,7 +60,7 @@ TTaotromino::TTaotromino(int y) {
     thirdColumn = { TaotrominoGrid::Empty, TaotrominoGrid::T, TaotrominoGrid::Empty, TaotrominoGrid::Empty };
     fourthColumn = { TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::Empty, TaotrominoGrid::Empty };
     
-    taoDefinition[4] = { firstColumn, secondColumn, thirdColumn, fourthColumn };
+    taoDefinition[3] = { firstColumn, secondColumn, thirdColumn, fourthColumn };
     
     
     taoSize = 3;
