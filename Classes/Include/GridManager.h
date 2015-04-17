@@ -8,10 +8,12 @@
 #ifndef GRIDMANAGER_H
 #define	GRIDMANAGER_H
 
+#include <string>
+#include <array> 
+
 #include "cocos2d.h"
-#if defined(WIN32) || defined(_WIN32) || defined(__WIN32) && !defined(__CYGWIN__)
-	#include <array> 
-#endif
+#include "Taotromino.h"
+#include "TaotrominoGrid.h"
 
 class GridManager : public cocos2d::Node{
 public:
@@ -21,9 +23,14 @@ public:
     
     void grawGrid (Node);
     void updateGrid ();
+    
+    std::string BlockName (TaotrominoGrid::taotromino_t blockType);
+    
 private:
     std::array<std::array<int,(std::size_t) 10>,(std::size_t) 16> frontGrid;
     std::array<std::array<int,(std::size_t) 10>,(std::size_t) 16> backGrid;
+    
+    Taotromino *currentTao;
 };
 
 #endif	/* GRIDMANAGER_H */

@@ -4,7 +4,7 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>background.png</key>
+            <key>background</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,2},{1920,1080}}</string>
@@ -17,7 +17,7 @@
                 <key>sourceSize</key>
                 <string>{1920,1080}</string>
             </dict>
-            <key>daSquareAka.png</key>
+            <key>daSquareAka</key>
             <dict>
                 <key>frame</key>
                 <string>{{1444,1084},{90,90}}</string>
@@ -30,7 +30,7 @@
                 <key>sourceSize</key>
                 <string>{90,90}</string>
             </dict>
-            <key>daSquareAkaBig.png</key>
+            <key>daSquareAkaBig</key>
             <dict>
                 <key>frame</key>
                 <string>{{1536,1084},{90,90}}</string>
@@ -43,7 +43,7 @@
                 <key>sourceSize</key>
                 <string>{90,90}</string>
             </dict>
-            <key>daSquareBro.png</key>
+            <key>daSquareImouto</key>
             <dict>
                 <key>frame</key>
                 <string>{{1628,1084},{90,90}}</string>
@@ -56,7 +56,7 @@
                 <key>sourceSize</key>
                 <string>{90,90}</string>
             </dict>
-            <key>daSquareBroBig.png</key>
+            <key>daSquareMidori</key>
             <dict>
                 <key>frame</key>
                 <string>{{1720,1084},{90,90}}</string>
@@ -69,7 +69,7 @@
                 <key>sourceSize</key>
                 <string>{90,90}</string>
             </dict>
-            <key>daSquareMidori.png</key>
+            <key>daSquareMidoriBig</key>
             <dict>
                 <key>frame</key>
                 <string>{{1812,1084},{90,90}}</string>
@@ -82,7 +82,7 @@
                 <key>sourceSize</key>
                 <string>{90,90}</string>
             </dict>
-            <key>daSquareMidoriBig.png</key>
+            <key>daSquareMiku</key>
             <dict>
                 <key>frame</key>
                 <string>{{1444,1176},{90,90}}</string>
@@ -95,7 +95,7 @@
                 <key>sourceSize</key>
                 <string>{90,90}</string>
             </dict>
-            <key>daSquareMiku.png</key>
+            <key>daSquareMikuBig</key>
             <dict>
                 <key>frame</key>
                 <string>{{1536,1176},{90,90}}</string>
@@ -108,7 +108,7 @@
                 <key>sourceSize</key>
                 <string>{90,90}</string>
             </dict>
-            <key>daSquareMikuBig.png</key>
+            <key>daSquareMomo</key>
             <dict>
                 <key>frame</key>
                 <string>{{1628,1176},{90,90}}</string>
@@ -121,7 +121,7 @@
                 <key>sourceSize</key>
                 <string>{90,90}</string>
             </dict>
-            <key>daSquarePlum.png</key>
+            <key>daSquareMomoBig</key>
             <dict>
                 <key>frame</key>
                 <string>{{1720,1176},{90,90}}</string>
@@ -134,7 +134,7 @@
                 <key>sourceSize</key>
                 <string>{90,90}</string>
             </dict>
-            <key>daSquarePlumBig.png</key>
+            <key>daSquareOnee</key>
             <dict>
                 <key>frame</key>
                 <string>{{1812,1176},{90,90}}</string>
@@ -147,7 +147,7 @@
                 <key>sourceSize</key>
                 <string>{90,90}</string>
             </dict>
-            <key>daSquareShiro.png</key>
+            <key>daSquareOnii</key>
             <dict>
                 <key>frame</key>
                 <string>{{1444,1268},{90,90}}</string>
@@ -160,7 +160,7 @@
                 <key>sourceSize</key>
                 <string>{90,90}</string>
             </dict>
-            <key>daSquareShiroBig.png</key>
+            <key>daSquareOtouto</key>
             <dict>
                 <key>frame</key>
                 <string>{{1536,1268},{90,90}}</string>
@@ -173,7 +173,7 @@
                 <key>sourceSize</key>
                 <string>{90,90}</string>
             </dict>
-            <key>daSquareSis.png</key>
+            <key>daSquareShiro</key>
             <dict>
                 <key>frame</key>
                 <string>{{1628,1268},{90,90}}</string>
@@ -186,7 +186,7 @@
                 <key>sourceSize</key>
                 <string>{90,90}</string>
             </dict>
-            <key>daSquareSisBig.png</key>
+            <key>daSquareShiroBig</key>
             <dict>
                 <key>frame</key>
                 <string>{{1720,1268},{90,90}}</string>
@@ -199,7 +199,7 @@
                 <key>sourceSize</key>
                 <string>{90,90}</string>
             </dict>
-            <key>mainGrid.png</key>
+            <key>mainGrid</key>
             <dict>
                 <key>frame</key>
                 <string>{{2,1084},{1440,900}}</string>
@@ -222,7 +222,7 @@
             <key>size</key>
             <string>{1924,1986}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:ded6489108add122569b8d0458ff21ce:f88a5ece858251a3be830706552a8eb2:ae10ba4e321433e4b955bb4e2f785dc7$</string>
+            <string>$TexturePacker:SmartUpdate:673e9422b84a5045ebc44898d9cbd076:1d37fd6a4b55757f800a57bc4b71490c:ae10ba4e321433e4b955bb4e2f785dc7$</string>
             <key>textureFileName</key>
             <string>TaotrisRes.webp</string>
         </dict>

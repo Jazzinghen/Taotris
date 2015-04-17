@@ -40,16 +40,16 @@ bool HelloWorld::init()
     // Using an empty node to maintain all of the game sprites
     auto spriteNode = Node::create();
     
-    auto background = Sprite::createWithSpriteFrameName("background.png");
+    auto background = Sprite::createWithSpriteFrameName("background");
     background->setAnchorPoint(Vec2(0, 0));
     background->setPosition(0, 0);
     
     // Loading SquareBro from the SpriteSheet
-    auto daSquareBro = Sprite::createWithSpriteFrameName("daSquareBro.png");
+    auto daSquareBro = Sprite::createWithSpriteFrameName("daSquareOtouto");
     daSquareBro->setPosition(0, 90);
     daSquareBro->setAnchorPoint(Vec2(0, 0));
     
-    auto daSquareSis = Sprite::createWithSpriteFrameName("daSquareSisBig.png");
+    auto daSquareSis = Sprite::createWithSpriteFrameName("daSquareOnee");
     daSquareSis->setPosition(225, 225);
     daSquareSis->setScale(1,1);
     
@@ -61,18 +61,7 @@ bool HelloWorld::init()
     // Adding Squares to the spriteNode
     spriteNode->addChild(daSquareBro,0);
     spriteNode->addChild(daSquareSis,0);
-    
-    std::cout << "Creating Taotromino" << std::endl;
-    currentTao = new Taotromino(Taotromino::Line);
-     std::cout << "Setting Location" << std::endl;
-    currentTao->setPosition((90 + 90*16) - 45, (90 + 90*5) - 45);
-    currentTao->setRotation(90.0);
-    
-     std::cout << "Adding Taotromino to scene" << std::endl;
-    spriteNode->addChild(currentTao, 2);
-     std::cout << "End" << std::endl;
-
-     
+         
     return true;
 }
 

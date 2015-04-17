@@ -20,10 +20,6 @@ public:
     CREATE_FUNC(HelloWorld);
     
     void update(float delta) override;
-
-private:
-    
-    Taotromino *currentTao;
 };
 
 #endif // __HELLOWORLD_SCENE_H__
