@@ -45,7 +45,6 @@ GridManager::GridManager() {
     this->addChild(fuffa1, 2);
     this->addChild(fuffa2, 2);
      std::cout << "End" << std::endl;
-    
 }
 
 GridManager::GridManager(const GridManager& orig) {

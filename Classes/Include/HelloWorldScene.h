@@ -25,7 +25,7 @@ public:
 private:
     
     GridManager* taoManager;
-    float timeSinceStart;
+    float timeSinceStart = 0.0f;
 
 };
 

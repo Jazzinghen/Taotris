@@ -64,13 +64,15 @@ bool HelloWorld::init()
     
     // Needed to update the scene otherwise... It won't run it?
     this->scheduleUpdate();
-    
+
     return true;
 }
 
 void HelloWorld::update(float delta){
     timeSinceStart += delta;
     
+	std::cout << "Time elapsed: " << timeSinceStart << std::endl;
+
     if (timeSinceStart >= 2.0f){
         std::cout << "Now executing step!" << std::endl;
         taoManager->TaoStep();
