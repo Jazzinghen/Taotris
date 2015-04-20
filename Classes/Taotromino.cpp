@@ -16,6 +16,20 @@ USING_NS_CC;
 Taotromino::Taotromino() {
 }
 
+Taotromino * Taotromino::create()
+{
+    Taotromino * ret = new (std::nothrow) Taotromino();
+    if (ret && ret->init())
+    {
+        ret->autorelease();
+    }
+    else
+    {
+        CC_SAFE_DELETE(ret);
+    }
+    return ret;
+}
+
 Taotromino::~Taotromino() {
 }
 

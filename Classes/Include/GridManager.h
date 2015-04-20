@@ -17,14 +17,15 @@
 
 class GridManager : public cocos2d::Node{
 public:
-    GridManager();
     GridManager(const GridManager& orig);
     virtual ~GridManager();
     
-    void grawGrid (Node);
-    void updateGrid ();
+    void TrawGrid (Node);
+    void UpdateGrid ();
     
     std::string BlockName (TaotrominoGrid::taotromino_t blockType);
+    
+    static GridManager * create();
     
     void TaoStep ();
     
@@ -33,6 +34,8 @@ private:
     std::array<std::array<TaotrominoGrid::taotromino_t,(std::size_t) 10>,(std::size_t) 16> backGrid;
     
     Taotromino *currentTao;
+    
+    GridManager();
 };
 
 #endif	/* GRIDMANAGER_H */

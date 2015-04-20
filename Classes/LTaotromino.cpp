@@ -93,3 +93,17 @@ LTaotromino::LTaotromino(const LTaotromino& orig) {
 
 LTaotromino::~LTaotromino() {
 }
+
+LTaotromino * LTaotromino::create(int y)
+{
+    LTaotromino * ret = new (std::nothrow) LTaotromino(y);
+    if (ret && ret->init())
+    {
+        ret->autorelease();
+    }
+    else
+    {
+        CC_SAFE_DELETE(ret);
+    }
+    return ret;
+}

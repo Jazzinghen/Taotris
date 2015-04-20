@@ -82,3 +82,17 @@ ZTaotromino::ZTaotromino(const ZTaotromino& orig) {
 
 ZTaotromino::~ZTaotromino() {
 }
+
+ZTaotromino * ZTaotromino::create(int y)
+{
+    ZTaotromino * ret = new (std::nothrow) ZTaotromino(y);
+    if (ret && ret->init())
+    {
+        ret->autorelease();
+    }
+    else
+    {
+        CC_SAFE_DELETE(ret);
+    }
+    return ret;
+}

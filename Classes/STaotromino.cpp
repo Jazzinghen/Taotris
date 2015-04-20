@@ -82,3 +82,17 @@ STaotromino::STaotromino(const STaotromino& orig) {
 
 STaotromino::~STaotromino() {
 }
+
+STaotromino * STaotromino::create(int y)
+{
+    STaotromino * ret = new (std::nothrow) STaotromino(y);
+    if (ret && ret->init())
+    {
+        ret->autorelease();
+    }
+    else
+    {
+        CC_SAFE_DELETE(ret);
+    }
+    return ret;
+}

@@ -13,12 +13,15 @@
 
 class LTaotromino : public Taotromino{
 public:
-    LTaotromino(int y);
     
     LTaotromino(const LTaotromino& orig);
     virtual ~LTaotromino();
 
+    static LTaotromino * create(int y);
+    
 private:
+    
+    LTaotromino(int y);
 
 };
 

@@ -86,3 +86,17 @@ LineTaotromino::LineTaotromino(const LineTaotromino& orig) {
 
 LineTaotromino::~LineTaotromino() {
 }
+
+LineTaotromino * LineTaotromino::create(int y)
+{
+    LineTaotromino * ret = new (std::nothrow) LineTaotromino(y);
+    if (ret && ret->init())
+    {
+        ret->autorelease();
+    }
+    else
+    {
+        CC_SAFE_DELETE(ret);
+    }
+    return ret;
+}

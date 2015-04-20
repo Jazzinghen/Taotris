@@ -13,13 +13,16 @@
 
 class ZTaotromino : public Taotromino{
 public:
-    ZTaotromino(int y);
+
     
     ZTaotromino(const ZTaotromino& orig);
     virtual ~ZTaotromino();
-
+    
+    static ZTaotromino * create(int y);
+    
 private:
-
+    
+    ZTaotromino(int y);
 };
 
 #endif	/* ZTAOTROMINO_H */

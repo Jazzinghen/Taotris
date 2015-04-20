@@ -13,12 +13,15 @@
 
 class JTaotromino : public Taotromino{
 public:
-    JTaotromino(int y);
     
     JTaotromino(const JTaotromino& orig);
     virtual ~JTaotromino();
 
+    static JTaotromino * create(int y);
+    
 private:
+    
+    JTaotromino(int y);
 
 };
 

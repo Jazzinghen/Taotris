@@ -93,3 +93,17 @@ JTaotromino::JTaotromino(const JTaotromino& orig) {
 
 JTaotromino::~JTaotromino() {
 }
+
+JTaotromino * JTaotromino::create(int y)
+{
+    JTaotromino * ret = new (std::nothrow) JTaotromino(y);
+    if (ret && ret->init())
+    {
+        ret->autorelease();
+    }
+    else
+    {
+        CC_SAFE_DELETE(ret);
+    }
+    return ret;
+}

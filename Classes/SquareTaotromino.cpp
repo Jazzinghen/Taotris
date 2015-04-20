@@ -81,3 +81,17 @@ SquareTaotromino::SquareTaotromino(const SquareTaotromino& orig) {
 
 SquareTaotromino::~SquareTaotromino() {
 }
+
+SquareTaotromino * SquareTaotromino::create(int y)
+{
+    SquareTaotromino * ret = new (std::nothrow) SquareTaotromino(y);
+    if (ret && ret->init())
+    {
+        ret->autorelease();
+    }
+    else
+    {
+        CC_SAFE_DELETE(ret);
+    }
+    return ret;
+}

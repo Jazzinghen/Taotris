@@ -18,7 +18,7 @@
 
 class Taotromino : public cocos2d::Node{    
 public:
-    Taotromino();
+    
     
     virtual ~Taotromino();
     
@@ -32,6 +32,8 @@ public:
         return type;
     }
     
+    static Taotromino * create();
+    
 protected:
     TaotrominoGrid::taotromino_t type;
     // taoSize is needed to access the mathematical representation of the tetramino
@@ -43,6 +45,8 @@ protected:
     int rotation = 0;
     std::array<TaotrominoGrid, (std::size_t) 4> taoDefinition;
     std::vector<cocos2d::Sprite*> taoBlocks;
+    
+    Taotromino();
     
     void AddToNode();
 };

@@ -13,13 +13,15 @@
 
 class LineTaotromino : public Taotromino{
 public:
-    LineTaotromino(int y);
     
     LineTaotromino(const LineTaotromino& orig);
     virtual ~LineTaotromino();
 
+    static LineTaotromino * create(int y);    
+    
 private:
 
+    LineTaotromino(int y);
 };
 
 #endif	/* LINETAOTROMINO_H */

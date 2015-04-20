@@ -13,12 +13,15 @@
 
 class SquareTaotromino : public Taotromino{
 public:
-    SquareTaotromino(int y);
     
     SquareTaotromino(const SquareTaotromino& orig);
     virtual ~SquareTaotromino();
+    
+    static SquareTaotromino * create(int y);
 
 private:
+    
+    SquareTaotromino(int y);
 
 };
 

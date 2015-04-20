@@ -13,13 +13,15 @@
 
 class TTaotromino : public Taotromino{
 public:
-    TTaotromino(int y);
     
     TTaotromino(const TTaotromino& orig);
     virtual ~TTaotromino();
-
+    
+    static TTaotromino * create(int y);
+    
 private:
 
+    TTaotromino(int y);
 };
 
 #endif	/* TTAOTROMINO_H */

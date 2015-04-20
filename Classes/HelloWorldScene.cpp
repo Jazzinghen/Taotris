@@ -35,7 +35,7 @@ bool HelloWorld::init()
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     
-    taoManager = new GridManager();
+    taoManager = GridManager::create();
     
     // Using an empty node to maintain all of the game sprites
     auto spriteNode = Node::create();
