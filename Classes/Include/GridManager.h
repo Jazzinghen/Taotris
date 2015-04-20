@@ -29,8 +29,8 @@ public:
     void TaoStep ();
     
 private:
-    std::array<std::array<int,(std::size_t) 10>,(std::size_t) 16> frontGrid;
-    std::array<std::array<int,(std::size_t) 10>,(std::size_t) 16> backGrid;
+    std::array<std::array<TaotrominoGrid::taotromino_t,(std::size_t) 10>,(std::size_t) 16> frontGrid;
+    std::array<std::array<TaotrominoGrid::taotromino_t,(std::size_t) 10>,(std::size_t) 16> backGrid;
     
     Taotromino *currentTao;
 };

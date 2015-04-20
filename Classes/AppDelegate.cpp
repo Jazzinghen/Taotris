@@ -74,7 +74,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
         
     auto screenSize = director->getOpenGLView()->getFrameSize();
     
-    std::cout << "getVisibleSize " << screenSize.height;
+    std::cout << "Frame size (Width x Height): " << screenSize.width << " x " << screenSize.height << std::endl;
     
     // loads the spritesheet into the manager
     auto squareCache = SpriteFrameCache::getInstance();

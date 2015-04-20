@@ -70,8 +70,6 @@ bool HelloWorld::init()
 
 void HelloWorld::update(float delta){
     timeSinceStart += delta;
-    
-	std::cout << "Time elapsed: " << timeSinceStart << std::endl;
 
     if (timeSinceStart >= 2.0f){
         std::cout << "Now executing step!" << std::endl;

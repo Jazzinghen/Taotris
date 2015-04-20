@@ -35,7 +35,7 @@ public:
 protected:
     TaotrominoGrid::taotromino_t type;
     // taoSize is needed to access the mathematical representation of the tetramino
-    int taoSize;
+    int taoSize = 0;
     // taoCentre = [x, y] in pixels for rotation
     int taoCentre[2];
     // taoLocation = [x, y] in col, rows

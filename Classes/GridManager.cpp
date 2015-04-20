@@ -8,6 +8,7 @@
 #include <fstream>
 #include <iostream>
 #include <string>
+#include <array>
 
 #include "Include/GridManager.h"
 #include "Include/Taotromino.h"
@@ -23,6 +24,36 @@
 USING_NS_CC;
 
 GridManager::GridManager() {
+    
+//    std::cout << "Front Grid (pre init)" << std::endl;
+//    
+//    for (std::array<TaotrominoGrid::taotromino_t, (std::size_t) 10> taoColumn : GridManager::frontGrid){
+//        for (TaotrominoGrid::taotromino_t taoCell : taoColumn){
+//            std::cout << taoCell << " ";
+//        }
+//        std::cout << ";" << std::endl;
+//    }
+    
+    for (auto&& taoColumn : GridManager::frontGrid){
+        for (auto&& taoCell : taoColumn){
+            taoCell = TaotrominoGrid::Empty;
+        }
+    }
+    
+//    std::cout << "Front Grid (post init)" << std::endl;
+//    for (std::array<TaotrominoGrid::taotromino_t, (std::size_t) 10> taoColumn : GridManager::frontGrid){
+//        for (TaotrominoGrid::taotromino_t taoCell : taoColumn){
+//            std::cout << taoCell << " ";
+//        }
+//        std::cout << ";" << std::endl;
+//    }
+    
+    for (auto&& taoColumn : GridManager::backGrid){
+        for (auto&& taoCell : taoColumn){
+            taoCell = TaotrominoGrid::Empty;
+        }
+    }
+    
     auto mainGrid = Sprite::createWithSpriteFrameName("mainGrid");
     mainGrid->setAnchorPoint(Vec2(0, 0));
     mainGrid->setPosition(90, 90);
