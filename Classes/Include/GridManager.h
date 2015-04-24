@@ -10,6 +10,7 @@
 
 #include <string>
 #include <array> 
+#include <random>
 
 #include "cocos2d.h"
 #include "Taotromino.h"
@@ -36,6 +37,29 @@ private:
     Taotromino *currentTao;
     
     GridManager();
+    
+    /** Structure to manage random numbers generation
+     * 
+     *  I have to admit, shamefully, that I have copied the code from a Stack Overflow answer and
+     *  I still have to understand why they are doing this, why this is better than other types
+     *  of approach and how does "static" work in front of methods inside structures inside class
+     *  definitions. I would have done differently but I suppo... WAIT A MOMENT!
+     *
+     *
+     *  typedef struct
+     *  {
+     *  unsigned random = random_value();
+     *  static unsigned random_value() {
+     *         static std::random_device engine;
+     *         static std::uniform_int_distribution<unsigned> distribution{0, 6};
+     *         return distribution(engine);
+     *      }
+     *  } randomDevice_t;
+     *
+     * randomDevice_t blockGenerator;
+     */
+    
+    void GenerateNewTao ();
 };
 
 #endif	/* GRIDMANAGER_H */

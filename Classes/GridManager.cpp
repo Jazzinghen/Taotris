@@ -9,6 +9,7 @@
 #include <iostream>
 #include <string>
 #include <array>
+#include <random>
 
 #include "Include/GridManager.h"
 #include "Include/Taotromino.h"
@@ -47,7 +48,7 @@ GridManager::GridManager() {
 //        }
 //        std::cout << ";" << std::endl;
 //    }
-    
+   
     for (auto&& taoColumn : GridManager::frontGrid){
         for (auto&& taoCell : taoColumn){
             taoCell = TaotrominoGrid::Empty;
@@ -74,8 +75,69 @@ GridManager::GridManager() {
     
     this->addChild(mainGrid);
     
-     std::cout << "Creating Taotromino" << std::endl;
-    currentTao = ZTaotromino::create(5);
+    GenerateNewTao();
+}
+
+GridManager::GridManager(const GridManager& orig) {
+}
+
+GridManager::~GridManager() {
+}
+
+void GridManager::GenerateNewTao(){
+    
+    /** This makes more sense to me. I have a static variable which is the same
+     *  variable, shared in all the instances of the class, without having to
+     *  create a new random_device every time and a new uniform_int_distribution.
+     *  It is not important that there will be just one instance of the GridManager,
+     *  but at least this is the way I feel this should be done.
+     * 
+     *  I will leave the other, suggested, implementation in the header. I know
+     *  this litters the code, but I might get some insight from it.
+     */
+    
+    static std::random_device engine;
+    static std::uniform_int_distribution<unsigned> distribution{0, 6};
+    
+    unsigned type = distribution(engine);
+    
+    std::cout << "Creating Taotromino " << type << std::endl;
+    
+    switch (type){
+        case 0:
+            currentTao = LineTaotromino::create(5);
+            break;
+        
+        case 1:
+            currentTao = SquareTaotromino::create(5);
+            break;
+            
+        case 2:
+            currentTao = TTaotromino::create(5);
+            break;
+        
+        case 3:
+            currentTao = STaotromino::create(5);
+            break;
+            
+        case 4:
+            currentTao = ZTaotromino::create(5);
+            break;
+        
+        case 5:
+            currentTao = JTaotromino::create(5);
+            break;
+            
+        case 6:
+            currentTao = LTaotromino::create(5);
+            break;    
+            
+        default:
+            std::cout << "We _REALLY_ should not be here!" << std::endl;
+            break;
+    }
+    
+    
      std::cout << "Setting Location" << std::endl;
     currentTao->setPosition((90 + 90*16) - 45, (90 + 90*5) - 45);
     
@@ -90,12 +152,6 @@ GridManager::GridManager() {
     //this->addChild(fuffa1, 2);
     //this->addChild(fuffa2, 2);
      std::cout << "End" << std::endl;
-}
-
-GridManager::GridManager(const GridManager& orig) {
-}
-
-GridManager::~GridManager() {
 }
 
 std::string GridManager::BlockName(TaotrominoGrid::taotromino_t blockType){

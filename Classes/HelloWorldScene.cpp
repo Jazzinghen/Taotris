@@ -38,29 +38,29 @@ bool HelloWorld::init()
     taoManager = GridManager::create();
     
     // Using an empty node to maintain all of the game sprites
-    auto spriteNode = Node::create();
+//    auto spriteNode = Node::create();
     
     auto background = Sprite::createWithSpriteFrameName("background");
     background->setAnchorPoint(Vec2(0, 0));
     background->setPosition(0, 0);
     
-    // Loading SquareBro from the SpriteSheet
-    auto daSquareBro = Sprite::createWithSpriteFrameName("daSquareOtouto");
-    daSquareBro->setPosition(0, 90);
-    daSquareBro->setAnchorPoint(Vec2(0, 0));
-    
-    auto daSquareSis = Sprite::createWithSpriteFrameName("daSquareOnee");
-    daSquareSis->setPosition(225, 225);
-    daSquareSis->setScale(1,1);
+//    // Loading SquareBro from the SpriteSheet
+//    auto daSquareBro = Sprite::createWithSpriteFrameName("daSquareOtouto");
+//    daSquareBro->setPosition(0, 90);
+//    daSquareBro->setAnchorPoint(Vec2(0, 0));
+//    
+//    auto daSquareSis = Sprite::createWithSpriteFrameName("daSquareOnee");
+//    daSquareSis->setPosition(225, 225);
+//    daSquareSis->setScale(1,1);
     
     // Adding spriteNode
-    this->addChild(spriteNode,-1);
+//    this->addChild(spriteNode,-1);
     this->addChild(taoManager, -9);
     this->addChild(background, -10);
     
     // Adding Squares to the spriteNode
-    spriteNode->addChild(daSquareBro,0);
-    spriteNode->addChild(daSquareSis,0);
+//    spriteNode->addChild(daSquareBro,0);
+//    spriteNode->addChild(daSquareSis,0);
     
     // Needed to update the scene otherwise... It won't run it?
     this->scheduleUpdate();
